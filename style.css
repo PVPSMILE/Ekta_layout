@@ -1,0 +1,640 @@
+.sale_usd{
+    font-size: 14px;
+}
+.content {
+    font-size: 26px;
+}
+.content_usd{
+    font-size: 20px;
+}
+.compensation{
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.thanksgiving .form__radio.cards-1{
+    display: block;
+    padding: 0px 0px 0px 45px;
+    text-align: start;
+}
+.thanksgiving .form__radio.cards-2{
+    padding: 0px 0px 0px 45px;
+    text-align: start;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 10vh;
+}
+
+.choose {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+}
+
+.form__radio {
+  display: none;
+  text-align: center;
+  padding: 10px;
+  padding: 45px 0px 0px 25px;
+}
+.button_text{
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: "Raleway";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+
+    text-transform: none;
+
+}
+.tariff-luggage{	
+    font-size: 32px;
+     font-family: 'Inter';
+    font-weight: 700;
+    line-height: 14px;
+    text-transform: uppercase;
+    width: 220px;
+
+}
+
+
+ul	{
+    font-family: "Montserrat";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    
+}
+.col.col-inline.eight_h{
+    display: inline-block;
+    font-variant-numeric:lining-nums proportional;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: 'Montserrat';
+
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+}
+.choose .radio__option.active .choose-svg {
+  fill: #fff;
+
+}
+.choose .radio__option.inactive .choose-svg {
+  fill: #000;
+
+}
+
+
+
+.choose .radio__option:first-child {
+  background-color: #5D3981;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+} */
+
+.choose .radio__option:last-child {
+  background-color: #5D3981;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.radio__option {
+  background-color: #f5f5f5;
+  color: #333;
+  margin-bottom: 5px;
+}	
+
+.choose .radio__option.active {
+    border-top: 1px solid #5D3981;
+    border-bottom: 1px solid #5D3981;
+    border-left: 1px solid #5D3981;;
+    background-color: #5D3981;
+    color: white;
+}
+
+
+.form__radio .tariff.active {
+    background: #5D3981;
+    color: white;
+}
+
+.form__radio .tariff {
+    border: 2px solid #5D3981;
+    color: #5D3981;
+    border-radius: 16px;
+}	
+
+.choose .radio__option.inactive {
+    
+    border: 2px  solid #000;
+    background-color: white;
+    color: #333;
+}
+
+.form__radio .tariff ul{
+    color: #000;
+    
+}	
+.form__radio .tariff ul li{
+
+    list-style: inside;
+    margin-right: 0px;
+    
+}
+
+.form__radio .tariff ul li.col::marker{
+    
+    list-style: inside;
+    padding-left: 0;
+    margin-right: 0px;
+
+}
+.form__radio .tariff.inactive ul {  				
+    color: #000;
+}
+.form__radio .tariff.active ul {   				
+    color: white;
+}
+
+.form__radio .tariff.inactive .custom-svg {  				
+    stroke: black;
+}
+.form__radio .tariff.active .custom-svg {   				
+    stroke: white;
+}
+
+.form__radio .tariff.inactive .luggage_compensation {  				
+    color: #000;
+}
+.form__radio .tariff.active .luggage_compensation {   				
+    color: #fff;
+}
+
+.form__radio .tariff.inactive .radio-svg {  				
+    stroke: black;
+    fill: white;
+
+}
+.form__radio .tariff.active .radio-svg {   				
+    stroke: white;
+    fill: white;
+}
+
+
+
+
+.form__radio .tariff.inactive .sale{
+    color: #363636;
+}
+.form__radio .tariff.active .sale{					
+    color: #9D9D9D;
+}
+
+
+.form__tabs.fields{
+padding-left: 500px;
+}
+
+.choose-buttons{
+    font-family: "Raleway";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.br_br{
+    display: none;
+}
+
+.tariff-name {
+font-size: 1.5rem;
+margin-bottom: 10px;
+}
+
+.tariff-price {
+font-size: 2rem;
+margin-bottom: 10px;
+}
+
+.tariff-features {
+font-size: 1rem;
+}
+
+
+.grid-container  {
+display: grid;
+grid-template-rows: auto auto;
+gap: 10px;
+}
+
+.grid-container.luggage  {
+
+    column-gap: 35px;
+}
+
+.col.col-inline {
+    grid-row: 1; 
+}
+ 
+.col.col-inline.bagge {
+    grid-row: 1; 
+    display: inline-block;
+    margin-left: 60px;
+}
+
+
+
+
+.svg-container {
+    position: relative;
+    display: inline-block;
+    margin-left: 0px;
+}	
+
+.hover-overlay {
+    color: #000;
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    position: absolute;
+    
+    bottom: 25px;
+    
+    left: 15px;
+    z-index: 9999;
+    display: block;
+    width: 348px;
+
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 12px;
+    background: #FFCAF0;
+}
+
+.svg-container:hover .hover-overlay {
+    display: block;
+    
+}
+.flight_sale{
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+}
+.luggage_sale{
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+}
+
+
+.col.luggage_compensation{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+    text-transform: uppercase;
+    grid-row:  2;
+}
+.br_br.luggage{
+    display: block;
+}
+
+
+
+.sale_line{
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+    width: 100%;
+    transform: rotate(-10deg);
+    border-bottom: 1px solid red;
+}
+.col.col-inline{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.col.col-inline.flight_price{
+    display: flex;
+    justify-content: space-between;
+    width: 135px;
+}
+.price{
+    display: block;
+}
+.radio-svg{
+    padding-left: 16px;
+}
+.col.col-inline.luggage_price{
+    
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 140px;
+}
+.help-block.with-errors{
+    position: relative;
+    margin-top: 8px;
+}
+.form__tab .tab__body{
+    border-bottom: none;
+    gap: 24px;
+}
+.delay_eight{
+    display: flex;
+    justify-content: space-between;
+
+}
+.tab__body .tab__label label{
+    padding: 0 8;
+    color: var(--default-100, #262626);    
+}
+    @media (max-width:991px){
+        .thanksgiving .form__radio.cards-1{
+            
+            padding: 0px;
+            
+        }
+        .thanksgiving .form__radio.cards-2{
+            padding: 0px;
+            
+        }
+        .form__tab .tab__body{
+            border-bottom: none;
+            gap: 0px;
+        }
+        .col.col-inline.flight_price {
+            width:auto;
+        
+        justify-content: flex-end;
+        }
+        .col.col-inline.luggage_price{
+            grid-row: 2;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            width:auto;
+        }
+
+        .price{
+            display: flex;
+            align-items: flex-start;
+        }	
+
+        .luggage_price .content{
+            font-size: 26px;
+            order: 1;
+            padding: 0px;
+        }
+        .luggage_price .radio-svg{
+            position: relative;
+            order: 3; 
+            
+        }
+        .luggage_price .luggage_sale{
+            margin-left: 35px;
+            order: 2;
+            padding: 0;
+        }
+
+        .content{
+            font-size: 26px;
+            order: 2;
+            padding: 0 4px;
+        }
+        .radio-svg{
+            position: relative;
+            order: 3; 
+            
+        }
+        .flight_sale{
+            order: 1;
+            padding: 0;
+        }
+        .form__radio.lugage_s {
+            margin-right: 24px;
+        }
+        .svg-container.luggage{
+        margin-left: 10px;
+        }	
+
+        .br_br.luggage{
+            display: none;
+        }
+        .grid-container.luggage  {
+
+            gap: 16px;
+        }
+        .col.luggage_compensation{
+            
+            grid-row:  3;
+        }
+        .carousel-slides {
+            display: flex;
+            width: 250%;
+            transition: transform 0.3s ease-in-out;
+            height: 200px;
+
+            
+        }
+        .carousel-slide {
+            width: 220px;
+            height: 150px;
+            padding: 0 16px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;		
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            overflow: visible;
+        }
+
+        .carousel-slides-2 {
+            display: flex;							
+            width: 220%;
+            transition: transform 0.3s ease-in-out	
+        }
+
+        .carousel-slides {								
+            width: 209%;
+        }
+        
+        .col.flight_price {
+        grid-row: 2; 								
+        }
+
+        .flight_sale.eight_h{
+            position: absolute;
+            bottom: 60px;
+        }
+
+        .hover-overlay {
+            width: 408px;
+            bottom: unset;
+            top: 65px;
+            left: unset;
+            right: -20px;
+        }
+
+            
+        .choose{
+            height: 6vh;
+        }
+        
+        .form__radio .tariff {
+            
+            margin-right: 24px;
+        }
+        .form__radio .tariff.inactive ul {  				
+            color: #000;
+        }
+        .form__radio .tariff.active ul {   				
+            color: #000;
+        }			
+        .form__radio .tariff ul{
+            
+            position: absolute;
+            top:170px
+        }
+
+        .form__tabs.fields{
+            padding-left: 45px;
+        }
+        
+        .col.col-inline.bagge {
+        grid-row: 2; 
+        
+        margin-left: 0px;
+        }       
+    }
+
+    .luggage_compensation{	
+        bottom: 30px;
+    }
+
+@media (max-width:786px){
+    .carousel-slides {
+        width: 245%;
+    }
+    .carousel-slides-2 {
+        width: 230%;
+    }
+    
+}
+
+@media (max-width:576px){
+    
+    
+    .carousel-slides {								
+        width: 312%;
+    }
+    .carousel-slides-2 {								
+        width: 350%;
+    }
+    
+    
+    
+    
+
+    .choose-buttons{
+        font-size: 18px;
+    }
+}
+@media (max-width:479px){
+
+    .carousel-slides-2 {								
+        width: 320%;
+    }
+    .tariff-luggage{
+        width: 200px;
+        font-size: 26px;
+    }
+    .grid-container{
+        gap: 25px;
+    }	
+    
+    
+    .br_br{
+        display: block;
+    }
+    
+
+    .choose-buttons{
+        font-size: 12px;
+    }
+    .choose-svg.plane{
+        position: absolute;
+        left: 12px;
+        top: 5px;
+    }
+    .choose-svg.lugage{
+        position: absolute;
+        right: 160px;
+        top: 5px;
+    }
+
+}
+@media (max-width:380px){
+    .col.col-inline{
+        margin-right: -10px;
+    }
+    
+    .button_text{	
+        font-size: 20px;
+    }
+    .button_text.luggage{
+        margin-right: 0px;
+        font-size: 20px;
+    }
+    .button_text.eight_h{
+        
+        font-size: 19px;
+    }
+    .svg-container{
+        margin-left: 64px;
+    }	
+    .svg-container.eight_h{
+        margin-left: 5px;
+    }
+    
+}
+@media (max-width:330px){
+
+
+
+    .hover-overlay {
+        width: 247px;
+        bottom: unset;
+        top: 58px;
+        left: unset;
+        right: -5px;
+    }
+
+
+.button_text.eight_h{
+    
+    font-size: 19px;
+}
+.svg-container{
+    margin-left: 50px;
+}	
+.svg-container.eight_h{
+    margin-left: 5px;
+}
+
+}
+
+
+
