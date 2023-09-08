@@ -32,6 +32,7 @@
 <link rel="preload" href="http://dev6.travel.ic-ekta.com/assets/libs/wizard/jquery.steps.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <link rel="preload" as="style" href="http://dev6.travel.ic-ekta.com/assets/css/style.min.css" onload="this.rel='stylesheet'">
 <link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="style_hover.css">
 </head>
 	<!-- Google Tag Manager -->
 <script>!function(e,t,a,n,g){e[n]=e[n]||[],e[n].push({"gtm.start":(new Date).getTime(),event:"gtm.js"});var m=t.getElementsByTagName(a)[0],r=t.createElement(a);r.defer=!0,r.src="https://www.googletagmanager.com/gtm.js?id=GTM-P866ZPC",m.parentNode.insertBefore(r,m)}(window,document,"script","dataLayer");</script>
@@ -119,13 +120,7 @@
 
 				
 				<div class=form  style=" max-width: 1000px " ;>
-					
 					<form class=insurer-form  data-toggle=validator>
-						
-						<style>
-							
-						</style>
-						
 						<div class="choose">
 							<div onclick="showOptions('one')" data-option="one" class="radio__option active"
 							 style="border-radius: 100000px 0 0 100000px; display: flex; width: 350px; height: 56px; justify-content: center; align-items: center;gap: 4px;">
@@ -145,31 +140,16 @@
 									Luggage loss insurance
 								</span>
 							</div>
-
-
-							
 						</div>
-						
-							
-						  
-						
-						
-						
-						<div class="form__radio cards-1" id="oneOptions">
-							
-								
+
+						<div class="form__radio cards-1" id="oneOptions">	
 							<div class="carousel-slides" >
-									
-								  
-							  
 								<div onclick="activateOption(this)" class="tariff tariff-button radio__option active carousel-slide" style="width: 420px; height: 174px; align-items: stretch; padding: 16 15 32;" data-tariff=basic>
 									<div class="grid-container button_text "  >
 										<div class="col col-inline" >
-											
-											<div style="display: inline-block;">Flight delay 
-												<br class="br_br">
-												2-4 hours </div>
-											
+											<div style="display: inline-block;">												
+												Flight delay <br class="br_br">2-4 hours 
+											</div>		
 											<div class="svg-container">
 												<svg class="custom-svg" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
 													<circle cx="13" cy="12.9998" r="9.00375"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -178,33 +158,24 @@
 													<path d="M13.1 9.24435C13.1 9.38248 12.9881 9.49445 12.8499 9.49445C12.7118 9.49445 12.5998 9.38248 12.5998 9.24435C12.5998 9.10622 12.7118 8.99424 12.8499 8.99424"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 													<path d="M12.8499 8.9943C12.9881 8.9943 13.1001 9.10627 13.1001 9.2444"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 												</svg>
-												<div class="hover-overlay">
+												<div class="hover-overlay flight">
 													<p>If your flight is delayed from 2 hours to 4 hours. You will receive compensation according to the fare you purchased. <br> In this case, the Insurer's liability limit is <span style="font-size: 11px; font-weight: 600;">USD</span> <span style="font-weight: 700;">100</span></p>
 												</div>
 											</div>
-								
 										</div>
-										<div class="col col-inline flight_price" >
-											<div class="flight_price">
-												<div class="price">
-													<span class="content" >
-														2315
-														<span class="content_usd">
-															USD
-														</span>
-													</span>
-													<br class="br_br luggage">
-													<span class="sale flight_sale" >
-														10
-														<span class="sale_usd" >
-															USD
-														</span>
-															<span class="sale_line" >
-															</span>
-													</span>
-												</div>
+										<div class="col col-inline flight_price">
+											<div class="price">
+												<span class="content" >
+													<span>5</span> 
+													<span class="content_usd">USD</span>
+												</span>
+												<br class="br_br luggage">
+												<span class="sale flight_sale" >
+													<span>10</span> 
+													<span class="sale_usd" >USD</span>
+													<span class="sale_line" ></span>
+												</span>
 											</div>
-								
 											<span class="radio-svg" >
 												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" >
 													<path d="M12 22C6.48614 22 2 17.5139 2 12C2 6.48614 6.48614 2 12 2C17.5139 2 22 6.48614 22 12C22 17.5139 17.5139 22 12 22ZM12 2.5C6.75886 2.5 2.5 6.75886 2.5 12C2.5 17.2411 6.75886 21.5 12 21.5C17.2411 21.5 21.5 17.2411 21.5 12C21.5 6.75886 17.2411 2.5 12 2.5Z" />
@@ -214,19 +185,16 @@
 										</div>	
 										<ul>
 											<li class="col" >Airport lounge zone</li>
-											<li class="col" >10 USD Uber voucher</li>
-											
-											
+											<li class="col" >10 USD Uber voucher</li>			
 										</ul>
 									</div>
 								</div>
 								<div onclick="activateOption(this)" class="tariff tariff-button radio__option inactive carousel-slide" style="width: 420px; height: 184px; 	align-items: stretch; padding: 16 15 32;" data-tariff=standart>
 									<div class="grid-container button_text "  style="display: grid; grid-template-rows: auto auto; gap: 10px;">
 										<div class="col col-inline" >
-											<div style="display: inline-block;">Flight delay 
-												<br class="br_br">
-												2-4 hours </div>
-											
+											<div style="display: inline-block;">
+												<span>Flight delay <br class="br_br">2-4 hours  </span> 
+											</div>
 											<div class="svg-container">
 												<svg class="custom-svg" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
 													<circle cx="13" cy="12.9998" r="9.00375"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -235,39 +203,31 @@
 													<path d="M13.1 9.24435C13.1 9.38248 12.9881 9.49445 12.8499 9.49445C12.7118 9.49445 12.5998 9.38248 12.5998 9.24435C12.5998 9.10622 12.7118 8.99424 12.8499 8.99424"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 													<path d="M12.8499 8.9943C12.9881 8.9943 13.1001 9.10627 13.1001 9.2444"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 												</svg>
-												<div class="hover-overlay">
+												<div class="hover-overlay flight">
 													<p>If your flight is delayed from 4 hours to 8 hours. You will receive compensation according to the fare you purchased. <br> In this case, the Insurer's liability limit is <span style="font-size: 11px; font-weight: 600;">USD</span> <span style="font-weight: 700;">100</span></p>
 												</div>
-											</div>
-											
+											</div>			
 										</div>
 										<div class="col col-inline flight_price">
 											<div class="price">
 												<span class="content" >
-													12,5
-													<span class="content_usd">
-														USD
-													</span>
+													<span>5</span> 
+													<span class="content_usd">USD</span>
 												</span>
 												<br class="br_br luggage">
 												<span class="sale flight_sale" >
-													10
-													<span class="sale_usd" >
-														USD
-													</span>
-														<span class="sale_line" >
-														</span>
+													<span>10</span> 
+													<span class="sale_usd" >USD</span>
+													<span class="sale_line" ></span>
 												</span>
 											</div>
-											
 											<span class="radio-svg" >
 												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" >
 													<path d="M12 22C6.48614 22 2 17.5139 2 12C2 6.48614 6.48614 2 12 2C17.5139 2 22 6.48614 22 12C22 17.5139 17.5139 22 12 22ZM12 2.5C6.75886 2.5 2.5 6.75886 2.5 12C2.5 17.2411 6.75886 21.5 12 21.5C17.2411 21.5 21.5 17.2411 21.5 12C21.5 6.75886 17.2411 2.5 12 2.5Z" />
 													<path d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18Z" stroke="white" />
 												</svg>
 											</span>
-										</div>
-										
+										</div>									
 										<ul>
 											<li class="col" >Airport lounge zone</li>
 											<li class="col" >10 USD Uber voucher</li>
@@ -281,7 +241,7 @@
 									<div class="grid-container button_text " style="display: grid; grid-template-rows: auto auto; gap: 10px; ">
 										<div class="col col-inline eight_h" >
 											<div class="delay_eight" >
-												Flight delay 8 hours 
+												<span>Flight delay 8 hours </span>												
 												<div class="svg-container eight_h">
 													<svg class="custom-svg" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
 														<circle cx="13" cy="12.9998" r="9.00375"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -291,32 +251,25 @@
 														<path d="M12.8499 8.9943C12.9881 8.9943 13.1001 9.10627 13.1001 9.2444"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 													</svg>
 													
-													<div class="hover-overlay">
+													<div class="hover-overlay flight">
 														<p>If your flight is delayed for more than 8 hours or canceled. You will receive a refund according to the fare you purchased. <br>In this case, the Insurer's liability limit is 	<span style="font-size: 11px; font-weight: 600;">USD</span> <span style="font-weight: 700;">500</span></p>
 													</div>
 												</div>
 												
 											</div>
-											
-											
-												or cancellation
+												<span>or cancellation</span>										
 										</div>
 										<div class="col col-inline flight_price">
 											<div class="price">
 												<span class="content" >
-													5
-													<span class="content_usd">
-														USD
-													</span>
+													<span>5</span> 
+													<span class="content_usd">USD</span>
 												</span>
 												<br class="br_br luggage">
 												<span class="sale flight_sale" >
-													10
-													<span class="sale_usd" >
-														USD
-													</span>
-														<span class="sale_line" >
-														</span>
+													<span>10</span> 
+													<span class="sale_usd" >USD</span>
+													<span class="sale_line" ></span>
 												</span>
 											</div>
 											
@@ -326,8 +279,7 @@
 													<path d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18Z" stroke="white" />
 												</svg>
 											</span>
-										</div>
-										
+										</div>										
 										<ul>
 											<li class="col" >Airport lounge zone</li>	
 											<li class="col" >10 USD Uber voucher</li>
@@ -340,19 +292,13 @@
 							</div>
 						</div>
 						
-						<div class="form__radio cards-2" id="twoOptions"  >
-							
-								
+						<div class="form__radio cards-2" id="twoOptions"  >	
 							<div class="carousel-slides-2"  >
-									
-								  
-							  
 								<div onclick="activateOption(this)" class="tariff tariff-button radio__option active carousel-slide  lugage_s" style="width: 420px; height: 150px; padding: 0px 20px 0px 20px;" data-tariff=basic>
 									<div class="grid-container button_text luggage"  >
 										<div class="col col-inline" >
 											<span class="tariff-luggage">
-
-												Basic
+												<span>Basic</span>			
 												<div class="svg-container luggage">
 													<svg class="custom-svg" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
 														<circle cx="13" cy="12.9998" r="9.00375"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -361,66 +307,48 @@
 														<path d="M13.1 9.24435C13.1 9.38248 12.9881 9.49445 12.8499 9.49445C12.7118 9.49445 12.5998 9.38248 12.5998 9.24435C12.5998 9.10622 12.7118 8.99424 12.8499 8.99424"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 														<path d="M12.8499 8.9943C12.9881 8.9943 13.1001 9.10627 13.1001 9.2444"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 													</svg>
-													<div class="hover-overlay luggage" style="font-size: 14px; font-family: Inter;font-style: normal; font-weight: 400; line-height: normal; text-transform: none; width: 390px;">
+													<div class="hover-overlay luggage">
 														<p>If your luggage is lost, the first part of the 100 <span style="font-size: 13px; font-weight: 500;">USD</span>  compensation will be paid to you within 24 hours. <br>  If the luggage is not found and lost within <br>  the 21st calendar day, the second part of the 100 <span style="font-size: 13px; font-weight: 500;">USD</span>  compensation will be paid to you within 24 hours.</p>
 													</div>
 												</div>
-
 											</span>
-											<br>
-											
-											
+											<br>		
 										</div>
 										<div class="col col-inline luggage_compensation">
-											<span>Compensation  
-												<span class="compensation" >
-													1200
-												</span>
-												usd
-											</span>
-											
+											<span>
+												<span>Compensation</span>   
+												<span class="compensation" >1200</span>
+												<span>usd</span>								
+											</span>	
 										</div>
-
 										<div class="col col-inline luggage_price">
 											<div class="price">
 												<span class="content" >
-													5
-													<span class="content_usd">
-														USD
-													</span>
+													<span>521</span>
+													<span class="content_usd">USD</span>
 												</span>
 												<br class="br_br luggage">
 												<span class="sale luggage_sale" >
-													10
-													<span class="sale_usd" >
-														USD
-													</span>
-														<span class="sale_line" >
-														</span>
+													<span>1430</span>			
+													<span class="sale_usd" >USD</span>
+													<span class="sale_line" ></span>
 												</span>
 											</div>
-											
 											<span class="radio-svg" >
 												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" >
 													<path d="M12 22C6.48614 22 2 17.5139 2 12C2 6.48614 6.48614 2 12 2C17.5139 2 22 6.48614 22 12C22 17.5139 17.5139 22 12 22ZM12 2.5C6.75886 2.5 2.5 6.75886 2.5 12C2.5 17.2411 6.75886 21.5 12 21.5C17.2411 21.5 21.5 17.2411 21.5 12C21.5 6.75886 17.2411 2.5 12 2.5Z" />
 													<path d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18Z" stroke="white" />
 												</svg>
 											</span>
-										</div>
-										
-										
-										
-									
+										</div>					
 									</div>
-
 
 								</div>
 								<div onclick="activateOption(this)" class="tariff tariff-button radio__option inactive carousel-slide lugage_s" style="width: 420px; height: 150px; padding: 0px 20px 0px 20px;" data-tariff=standart>
 									<div class="grid-container button_text luggage"  >
 										<div class="col col-inline" >
 											<span class="tariff-luggage">
-
-												Standart
+												<span>Standart</span>												
 												<div class="svg-container luggage">
 													<svg class="custom-svg" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
 														<circle cx="13" cy="12.9998" r="9.00375"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -429,45 +357,34 @@
 														<path d="M13.1 9.24435C13.1 9.38248 12.9881 9.49445 12.8499 9.49445C12.7118 9.49445 12.5998 9.38248 12.5998 9.24435C12.5998 9.10622 12.7118 8.99424 12.8499 8.99424"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 														<path d="M12.8499 8.9943C12.9881 8.9943 13.1001 9.10627 13.1001 9.2444"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 													</svg>
-													<div class="hover-overlay luggage" style="font-size: 14px; font-family: Inter;font-style: normal; font-weight: 400; line-height: normal; text-transform: none; width: 390px;">
+													<div class="hover-overlay luggage" >
 														<p>If your luggage is lost, the first part of the 100 <span style="font-size: 13px; font-weight: 500;">USD</span>  compensation will be paid to you within 24 hours. <br>  If the luggage is not found and lost within <br>  the 21st calendar day, the second part of the 100 <span style="font-size: 13px; font-weight: 500;">USD</span>  compensation will be paid to you within 24 hours.</p>
 													</div>
 												</div>
 
 											</span>
-											<br>
-											
-											
-										</div>
+											<br>		
+										</div>										
 										<div class="col col-inline luggage_compensation">
-											<span>Compensation  
-												<span class="compensation" >
-													1200
-												</span>
-												usd
-											</span>
-											
+											<span>
+												<span>Compensation</span>   
+												<span class="compensation" >1200</span>
+												<span>usd</span>								
+											</span>	
 										</div>
-										
 										<div class="col col-inline luggage_price">
 											<div class="price">
 												<span class="content" >
-													5
-													<span class="content_usd">
-														USD
-													</span>
+													<span>521</span>
+													<span class="content_usd">USD</span>
 												</span>
 												<br class="br_br luggage">
 												<span class="sale luggage_sale" >
-													10
-													<span class="sale_usd" >
-														USD
-													</span>
-														<span class="sale_line" >
-														</span>
+													<span>1430</span>			
+													<span class="sale_usd" >USD</span>
+													<span class="sale_line" ></span>
 												</span>
-											</div>
-											
+											</div>		
 											<span class="radio-svg" >
 												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" >
 													<path d="M12 22C6.48614 22 2 17.5139 2 12C2 6.48614 6.48614 2 12 2C17.5139 2 22 6.48614 22 12C22 17.5139 17.5139 22 12 22ZM12 2.5C6.75886 2.5 2.5 6.75886 2.5 12C2.5 17.2411 6.75886 21.5 12 21.5C17.2411 21.5 21.5 17.2411 21.5 12C21.5 6.75886 17.2411 2.5 12 2.5Z" />
@@ -475,10 +392,6 @@
 												</svg>
 											</span>
 										</div>
-										
-										
-										
-									
 									</div>
 								</div>
 									
@@ -486,8 +399,7 @@
 									<div class="grid-container button_text luggage"  >
 										<div class="col col-inline" >
 											<span class="tariff-luggage" >
-
-												Premium
+												<span>Premium</span>												
 												<div class="svg-container luggage">
 													<svg class="custom-svg" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
 														<circle cx="13" cy="12.9998" r="9.00375"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -496,45 +408,33 @@
 														<path d="M13.1 9.24435C13.1 9.38248 12.9881 9.49445 12.8499 9.49445C12.7118 9.49445 12.5998 9.38248 12.5998 9.24435C12.5998 9.10622 12.7118 8.99424 12.8499 8.99424"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 														<path d="M12.8499 8.9943C12.9881 8.9943 13.1001 9.10627 13.1001 9.2444"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 													</svg>
-													<div class="hover-overlay luggage" style="font-size: 14px; font-family: Inter;font-style: normal; font-weight: 400; line-height: normal; text-transform: none; width: 390px;">
+													<div class="hover-overlay luggage">
 														<p>If your luggage is lost, the first part of the 100 <span style="font-size: 13px; font-weight: 500;">USD</span>  compensation will be paid to you within 24 hours. <br>  If the luggage is not found and lost within <br>  the 21st calendar day, the second part of the 100 <span style="font-size: 13px; font-weight: 500;">USD</span>  compensation will be paid to you within 24 hours.</p>
 													</div>
 												</div>
-
 											</span>
 											<br>
-											
-											
 										</div>
 										<div class="col col-inline luggage_compensation">
-											<span>Compensation  
-												<span class="compensation" >
-													1200
-												</span>
-												usd
-											</span>
-											
+											<span>
+												<span>Compensation</span>   
+												<span class="compensation" >1200</span>
+												<span>usd</span>								
+											</span>	
 										</div>
-										
 										<div class="col col-inline luggage_price">
 											<div class="price">
 												<span class="content" >
-													5
-													<span class="content_usd">
-														USD
-													</span>
+													<span>521</span>
+													<span class="content_usd">USD</span>
 												</span>
 												<br class="br_br luggage">
 												<span class="sale luggage_sale" >
-													10
-													<span class="sale_usd" >
-														USD
-													</span>
-														<span class="sale_line" >
-														</span>
+													<span>1430</span>			
+													<span class="sale_usd" >USD</span>
+													<span class="sale_line" ></span>
 												</span>
-											</div>
-											
+											</div>		
 											<span class="radio-svg" >
 												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" >
 													<path d="M12 22C6.48614 22 2 17.5139 2 12C2 6.48614 6.48614 2 12 2C17.5139 2 22 6.48614 22 12C22 17.5139 17.5139 22 12 22ZM12 2.5C6.75886 2.5 2.5 6.75886 2.5 12C2.5 17.2411 6.75886 21.5 12 21.5C17.2411 21.5 21.5 17.2411 21.5 12C21.5 6.75886 17.2411 2.5 12 2.5Z" />
@@ -542,10 +442,6 @@
 												</svg>
 											</span>
 										</div>
-										
-										
-										
-									
 									</div>
 								</div>
 							</div>
@@ -572,12 +468,9 @@
 							  var selectedOptions = document.getElementById(option + 'Options');
 							  selectedOptions.style.display = 'block';
 							  if (window.innerWidth < 992) {
-								selectedOptions.style.padding = '0px 0px 0px 0px';
-								
-							
+								selectedOptions.style.padding = '0px 0px 0px 0px';							
 							  }
-							  
-						  
+
 							  var allButtons = document.querySelectorAll('.choose .radio__option');
 							  for (var i = 0; i < allButtons.length; i++) {
 								allButtons[i].classList.remove('active');
@@ -599,8 +492,6 @@
 							  option.classList.remove('inactive');
 							}
 
-							
-							
 							const carouselSlides = document.querySelector('.carousel-slides');
 							const slides = carouselSlides.querySelectorAll('.carousel-slide');
 							
@@ -625,8 +516,6 @@
 								transform_num = 87;
 							document.querySelector('.form__radio').style.padding = `0px 0 0 00`;
 
-							
-							
 							}
 							window.addEventListener('resize', function() {
 								if (window.innerWidth < 992) {
@@ -645,14 +534,8 @@
 
 								}
 								if (window.innerWidth < 577) {
-									
-
 									document.querySelector('.lugage_s').style.alignItems = `flex-start`;
-									
-									document.querySelector('.form__radio').style.padding = `0px 0px 0px 0px`;
-
-
-									
+									document.querySelector('.form__radio').style.padding = `0px 0px 0px 0px`;	
 								
 								}
 								else{
@@ -661,14 +544,6 @@
 									
 								}
 							});
-
-						
-							
-							
-							
-							
-							
-							
 							function showSlide(index) {
 							slides.forEach((slide) => {
 								
@@ -711,26 +586,23 @@
 							carouselSlides.addEventListener('touchmove', handleTouchMove);
 							carouselSlides.addEventListener('touchend', handleTouchEnd);
 
-							// Показать начальный слайд
 							showSlide(currentIndex);
 
+							const carouselSlides2 = document.querySelector('.carousel-slides-2'); 
+							const slides2 = carouselSlides2.querySelectorAll('.carousel-slide'); 
 
-							// JavaScript код
-							const carouselSlides2 = document.querySelector('.carousel-slides-2'); // Переименовали переменную
-							const slides2 = carouselSlides2.querySelectorAll('.carousel-slide'); // Переименовали переменную
+							const numSlides2 = slides2.length; 
 
-							const numSlides2 = slides2.length; // Переименовали переменную
-
-							let currentIndex2 = 0; // Переименовали переменную
-							let startX2 = 0; // Переименовали переменную
-							let isDragging2 = false; // Переименовали переменную
-							let shift2 = 0; // Переименовали переменную
+							let currentIndex2 = 0; 
+							let startX2 = 0; 
+							let isDragging2 = false; 
+							let shift2 = 0; 
 
 							if (window.innerWidth < 991) {
 									slides2[0].style.height = '214px';
 									slides2[1].style.height = '214px';
 									slides2[2].style.height = '214px';
-    // Ваш код, который нужн	о выполнить при ширине окна менее или равной 991px
+
 								}
 							
 							window.addEventListener('resize', function() {
@@ -738,44 +610,37 @@
 									slides2[0].style.height = '214px';
 									slides2[1].style.height = '214px';
 									slides2[2].style.height = '214px';
-    // Ваш код, который нужн	о выполнить при ширине окна менее или равной 991px
+
 								}
 								else if (window.innerWidth > 991) {
 									slides2[0].style.height = '150px';
 									slides2[1].style.height = '150px';
 									slides2[2].style.height = '150px';
-									
-    // Ваш код, который нужн	о выполнить при ширине окна менее или равной 991px
 								}
 								
 							});
-							
-
-							function showSlide2(index) { // Переименовали функцию
+							function showSlide2(index) {
 								slides2.forEach((slide) => {
 									slide.classList.remove('active');
 									slide.classList.add('inactive');
 								});
 								slides2[index].classList.add('active');
-
-								
-								carouselSlides2.style.transform = `translateX(calc(-${index * (93 / numSlides2)}% - ${index * 20}px))`;
-								
+								carouselSlides2.style.transform = `translateX(calc(-${index * (93 / numSlides2)}% - ${index * 20}px))`;								
 							}
 
-							function handleTouchStart2(event) { // Переименовали функцию
+							function handleTouchStart2(event) {
 								isDragging2 = true;
 								startX2 = event.touches[0].clientX;
 								shift2 = 0;
 							}
 
-							function handleTouchMove2(event) { // Переименовали функцию
+							function handleTouchMove2(event) { 
 								if (!isDragging2) return;
 								const currentX = event.touches[0].clientX;
 								shift2 = startX2 - currentX;
 							}
 
-							function handleTouchEnd2() { // Переименовали функцию
+							function handleTouchEnd2() { 
 								if (!isDragging2) return;
 
 								isDragging2 = false;
@@ -792,12 +657,9 @@
 							carouselSlides2.addEventListener('touchmove', handleTouchMove2);
 							carouselSlides2.addEventListener('touchend', handleTouchEnd2);
 
-							// Показать начальный слайд
 							showSlide2(currentIndex2);
-
 						  </script>
-						
-						
+						  
 							<div class="form__tabs fields">
 								
 								<div class="form__tab form__tab_3 tab active" style="padding: 0px 45px 135px 0;">
@@ -850,9 +712,7 @@
 										</div>
 										<div class=tab__label style="grid-column: 1 / 3; display: flex; justify-content: center;">
 											<button class=form__btn style="width: 100%; margin-right: 0;">
-												Buy											
-													
-												
+												Buy												
 											</button>
 										</div>
 										<div class=tab__label style="grid-column: 1 / 3; text-align: center;">
@@ -1131,7 +991,7 @@
 		</div>
 	</div>
 </div>
-<link rel=preload as=style href="http://dev6.travel.ic-ekta.com/assets/css/thank.min.css" onload='this.rel="stylesheet"'>
+
 <script defer src="http://dev6.travel.ic-ekta.com/assets/libs/validator.min.js"></script>
 <script defer src="http://dev6.travel.ic-ekta.com/assets/js/thank.min.js"></script>
 <script>

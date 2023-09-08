@@ -53,6 +53,7 @@
     text-transform: none;
 
 }
+
 .tariff-luggage{	
     font-size: 32px;
      font-family: 'Inter';
@@ -62,7 +63,6 @@
     width: 220px;
 
 }
-
 
 ul	{
     font-family: "Montserrat";
@@ -77,7 +77,6 @@ ul	{
     font-variant-numeric:lining-nums proportional;
     font-variant-numeric: lining-nums proportional-nums;
     font-family: 'Montserrat';
-
     font-style: normal;
     font-weight: 700;
     line-height: 140%;
@@ -187,9 +186,6 @@ ul	{
     fill: white;
 }
 
-
-
-
 .form__radio .tariff.inactive .sale{
     color: #363636;
 }
@@ -261,20 +257,14 @@ gap: 10px;
 
 .hover-overlay {
     color: #000;
-    font-family: "Montserrat";
     font-size: 14px;
     font-style: normal;
-    font-weight: 500;
-    line-height: 26px;
     position: absolute;
-    
-    bottom: 25px;
-    
+    bottom: 25px;   
     left: 15px;
     z-index: 9999;
     display: block;
     width: 348px;
-
     padding: 16px;
     justify-content: center;
     align-items: center;
@@ -283,10 +273,27 @@ gap: 10px;
     background: #FFCAF0;
 }
 
+.hover-overlay.flight{  
+    font-family: "Montserrat";
+    font-weight: 500;
+    line-height: 26px;
+}
+.hover-overlay.luggage{   
+    width: 412px;
+    font-family: 'Inter';
+    font-weight: 400;
+    line-height: normal;
+    text-transform: none;
+}
 .svg-container:hover .hover-overlay {
     display: block;
+
     
 }
+/* .svg-container:hover .form__radio.tariff.active.custom-svg {
+    stroke: red;
+} */
+
 .flight_sale{
     position: relative;
     display: inline-block;
@@ -360,170 +367,156 @@ gap: 10px;
     padding: 0 8;
     color: var(--default-100, #262626);    
 }
-    @media (max-width:991px){
-        .thanksgiving .form__radio.cards-1{
-            
-            padding: 0px;
-            
-        }
-        .thanksgiving .form__radio.cards-2{
-            padding: 0px;
-            
-        }
-        .form__tab .tab__body{
-            border-bottom: none;
-            gap: 0px;
-        }
-        .col.col-inline.flight_price {
-            width:auto;
+@media (max-width:991px){
+    .thanksgiving .form__radio.cards-1{
         
-        justify-content: flex-end;
-        }
-        .col.col-inline.luggage_price{
-            grid-row: 2;
-            display: flex;
-            align-items: flex-start;
-            justify-content: space-between;
-            width:auto;
-        }
-
-        .price{
-            display: flex;
-            align-items: flex-start;
-        }	
-
-        .luggage_price .content{
-            font-size: 26px;
-            order: 1;
-            padding: 0px;
-        }
-        .luggage_price .radio-svg{
-            position: relative;
-            order: 3; 
-            
-        }
-        .luggage_price .luggage_sale{
-            margin-left: 35px;
-            order: 2;
-            padding: 0;
-        }
-
-        .content{
-            font-size: 26px;
-            order: 2;
-            padding: 0 4px;
-        }
-        .radio-svg{
-            position: relative;
-            order: 3; 
-            
-        }
-        .flight_sale{
-            order: 1;
-            padding: 0;
-        }
-        .form__radio.lugage_s {
-            margin-right: 24px;
-        }
-        .svg-container.luggage{
-        margin-left: 10px;
-        }	
-
-        .br_br.luggage{
-            display: none;
-        }
-        .grid-container.luggage  {
-
-            gap: 16px;
-        }
-        .col.luggage_compensation{
-            
-            grid-row:  3;
-        }
-        .carousel-slides {
-            display: flex;
-            width: 250%;
-            transition: transform 0.3s ease-in-out;
-            height: 200px;
-
-            
-        }
-        .carousel-slide {
-            width: 220px;
-            height: 150px;
-            padding: 0 16px;
-            box-sizing: border-box;
-            display: flex;
-            flex-direction: column;
-            align-items: center;		
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-            overflow: visible;
-        }
-
-        .carousel-slides-2 {
-            display: flex;							
-            width: 220%;
-            transition: transform 0.3s ease-in-out	
-        }
-
-        .carousel-slides {								
-            width: 209%;
-        }
+        padding: 0px;
         
-        .col.flight_price {
-        grid-row: 2; 								
-        }
-
-        .flight_sale.eight_h{
-            position: absolute;
-            bottom: 60px;
-        }
-
-        .hover-overlay {
-            width: 408px;
-            bottom: unset;
-            top: 65px;
-            left: unset;
-            right: -20px;
-        }
-
-            
-        .choose{
-            height: 6vh;
-        }
-        
-        .form__radio .tariff {
-            
-            margin-right: 24px;
-        }
-        .form__radio .tariff.inactive ul {  				
-            color: #000;
-        }
-        .form__radio .tariff.active ul {   				
-            color: #000;
-        }			
-        .form__radio .tariff ul{
-            
-            position: absolute;
-            top:170px
-        }
-
-        .form__tabs.fields{
-            padding-left: 45px;
-        }
-        
-        .col.col-inline.bagge {
-        grid-row: 2; 
-        
-        margin-left: 0px;
-        }       
     }
-
+    .thanksgiving .form__radio.cards-2{
+        padding: 0px;
+        
+    }
+    .form__tab .tab__body{
+        border-bottom: none;
+        gap: 0px;
+    }
+    .col.col-inline.flight_price {
+        width:auto;
+    
+    justify-content: flex-end;
+    }
+    .col.col-inline.luggage_price{
+        grid-row: 2;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        width:auto;
+    }
+    .price{
+        display: flex;
+        align-items: flex-start;
+    }	
+    .luggage_price .content{
+        font-size: 26px;
+        order: 1;
+        padding: 0px;
+    }
+    .luggage_price .radio-svg{
+        position: relative;
+        order: 3; 
+        
+    }
+    .luggage_price .luggage_sale{
+        margin-left: 35px;
+        order: 2;
+        padding: 0;
+    }
+    .content{
+        font-size: 26px;
+        order: 2;
+        padding: 0 4px;
+    }
+    .radio-svg{
+        position: relative;
+        order: 3; 
+        
+    }
+    .flight_sale{
+        order: 1;
+        padding: 0;
+    }
+    .form__radio.lugage_s {
+        margin-right: 24px;
+    }
+    .svg-container.luggage{
+    margin-left: 10px;
+    }	
+    .br_br.luggage{
+        display: none;
+    }
+    .grid-container.luggage  {
+        gap: 16px;
+    }
+    .col.luggage_compensation{
+        
+        grid-row:  3;
+    }
+    .carousel-slides {
+        display: flex;
+        width: 250%;
+        transition: transform 0.3s ease-in-out;
+        height: 200px;
+        
+    }
+    .carousel-slide {
+        width: 220px;
+        height: 150px;
+        padding: 0 16px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;		
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        overflow: visible;
+    }
+    .carousel-slides-2 {
+        display: flex;							
+        width: 220%;
+        transition: transform 0.3s ease-in-out	
+    }
+    .carousel-slides {								
+        width: 209%;
+    }
+    
+    .col.flight_price {
+    grid-row: 2; 								
+    }
+    .flight_sale.eight_h{
+        position: absolute;
+        bottom: 60px;
+    }
+    .hover-overlay {
+        width: 408px;
+        bottom: unset;
+        top: 100%;
+        left: unset;
+        right: -60%;
+    }
+        
+    .choose{
+        height: 6vh;
+    }
+    
+    .form__radio .tariff {
+        
+        margin-right: 24px;
+    }
+    .form__radio .tariff.inactive ul {  				
+        color: #000;
+    }
+    .form__radio .tariff.active ul {   				
+        color: #000;
+    }			
+    .form__radio .tariff ul{
+        
+        position: absolute;
+        top:170px
+    }
+    .form__tabs.fields{
+        padding-left: 45px;
+    }
+    
+    .col.col-inline.bagge {
+    grid-row: 2; 
+    
+    margin-left: 0px;
+    }       
+}
     .luggage_compensation{	
         bottom: 30px;
     }
-
 @media (max-width:786px){
     .carousel-slides {
         width: 245%;
@@ -541,7 +534,7 @@ gap: 10px;
         width: 312%;
     }
     .carousel-slides-2 {								
-        width: 350%;
+        width: 290%;
     }
     
     
@@ -553,7 +546,11 @@ gap: 10px;
     }
 }
 @media (max-width:479px){
-
+    .hover-overlay {
+        width: 1077%;
+        top: 50px;
+       
+    }
     .carousel-slides-2 {								
         width: 320%;
     }
