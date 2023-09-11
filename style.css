@@ -235,20 +235,14 @@ gap: 10px;
 
     column-gap: 35px;
 }
-
 .col.col-inline {
     grid-row: 1; 
 }
- 
 .col.col-inline.bagge {
     grid-row: 1; 
     display: inline-block;
     margin-left: 60px;
 }
-
-
-
-
 .svg-container {
     position: relative;
     display: inline-block;
@@ -290,9 +284,6 @@ gap: 10px;
 
     
 }
-/* .svg-container:hover .form__radio.tariff.active.custom-svg {
-    stroke: red;
-} */
 
 .flight_sale{
     position: relative;
@@ -305,7 +296,6 @@ gap: 10px;
     font-size: 20px;
 }
 
-
 .col.luggage_compensation{
     font-size: 14px;
     font-weight: 500;
@@ -316,9 +306,6 @@ gap: 10px;
 .br_br.luggage{
     display: block;
 }
-
-
-
 .sale_line{
     position: absolute;
     bottom: 12px;
@@ -353,6 +340,10 @@ gap: 10px;
 .help-block.with-errors{
     position: relative;
     margin-top: 8px;
+   
+}
+.help-block.with-errors li{  
+    font-size: calc(16px + 2*((100vw - 320px)/1120));
 }
 .form__tab .tab__body{
     border-bottom: none;
@@ -392,6 +383,23 @@ gap: 10px;
         align-items: flex-start;
         justify-content: space-between;
         width:auto;
+    }
+
+    .hover-overlay.luggage{
+        top: 165%;
+        
+    }
+    .hover-overlay.basic{
+        width: 51vh;
+        right: -24vh;
+    }
+    .hover-overlay.standart{
+        width: 51vh;
+        right: -14vh;
+    }
+    .hover-overlay.premium{
+        width: 51vh;
+        right: -17vh;
     }
     .price{
         display: flex;
@@ -605,12 +613,24 @@ gap: 10px;
     .svg-container.eight_h{
         margin-left: 5px;
     }
+    .hover-overlay.basic {
+        width: 42vh;
+        right: -19vh;
+    }
+    .hover-overlay.standart {
+        width: 42vh;
+        right: -9vh;
+    }
+    .hover-overlay.premium {
+        width: 42vh;
+        right: -12vh;
+    }
     
+
+    
+
 }
 @media (max-width:330px){
-
-
-
     .hover-overlay {
         width: 247px;
         bottom: unset;
@@ -618,10 +638,9 @@ gap: 10px;
         left: unset;
         right: -5px;
     }
-
+   
 
 .button_text.eight_h{
-    
     font-size: 19px;
 }
 .svg-container{

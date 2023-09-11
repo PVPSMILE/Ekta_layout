@@ -497,7 +497,8 @@
     margin-bottom: 5px;
     font-weight: 500;
     text-align: start;
-    color: #5a5081
+    color: #5a5081;
+    font-weight: bold;
 }
 
 .footer__lang:hover {
@@ -979,7 +980,8 @@ ul {
 
 .help-block.with-errors {
     position: relative;
-    margin-top: 8px
+    margin-top: 8px;
+    font-size: 14px;
 }
 
 .form__tab .tab__body {
@@ -1254,7 +1256,7 @@ ul {
     .tab__label:nth-child(3) {
         -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
-        order: -1
+
     }
 
     .tab__label.select {
@@ -1418,8 +1420,9 @@ ul {
     }
 
     .form__tabs.fields {
-        padding-left: 45px
+        padding: 105px 0 0 0;
     }
+
 
     .col.col-inline.bagge {
         grid-row: 2;
@@ -1659,7 +1662,7 @@ ul {
     }
 
     .carousel-slides-2 {
-        width: 350%
+        width: 290%
     }
 
     .choose-buttons {
@@ -1668,6 +1671,9 @@ ul {
 }
 
 @media (max-width: 479px) {
+    .carousel-slides-2 {
+        width: 325%
+    }
     .tariff-luggage {
         width:200px;
         font-size: 26px
