@@ -916,13 +916,10 @@ ul {
     position: absolute;
     bottom: 25px;
     left: 15px;
-    z-index: 9999;
+    z-index: 4000;
     display: none;
     width: 348px;
     padding: 16px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
     border-radius: 12px;
     background: #ffcaf0
 }
@@ -934,7 +931,7 @@ ul {
 }
 
 .hover-overlay.luggage {
-    width: 412px;
+    width: 438px;
     font-family: "Inter";
     font-weight: 400;
     line-height: normal;
@@ -1411,19 +1408,20 @@ ul {
         bottom: 60px
     }
 
-    .hover-overlay {
+    .hover-overlay{
         bottom: unset;
-        top: 100%;
         left: unset;
         right: -60%;
-        width: 421px
+        width: 421px;
+    }
+
+    .hover-overlay.flight  {     
+        top: 100%; 
     }
 
     .hover-overlay.luggage {
-        width: 421px;
-        bottom: unset;
-        top: 40px;
-        right: -60%
+        width: 422px;      
+        top: 40px;     
     }
 
     .hover-overlay.basic {
@@ -1549,15 +1547,19 @@ ul {
     .last-step__steps {
         margin-left: 0
     }
+   
+    .hover-overlay.flight {
+        width: 65.8vw; 
+    }
+    .carousel-slides-2 {
+        width: 250%
+    }
+    
 }
 
 @media (max-width: 576px) {
     .form__price {
         padding-top:0
-    }
-
-    .hover-overlay.luggage {
-        width: 420px
     }
 
     ._container {
@@ -1697,17 +1699,38 @@ ul {
     }
 
     .carousel-slides-2 {
-        width: 299%
+        width: 294%
     }
 
     .choose-buttons {
         font-size: 18px
     }
+
+    .hover-overlay.flight {
+        width: 74.1vw; 
+    }
+
+    
 }
 
 @media (max-width: 530px) {
-    .hover-overlay {
+    .hover-overlay.flight {
         width:74vw
+    }
+    .hover-overlay.luggage {
+        width: 81vw
+    }
+
+    .hover-overlay.basic {
+        right: -33.8vw
+    }
+
+    .hover-overlay.standart {
+        right: -19.39vw
+    }
+
+    .hover-overlay.premium {
+        right: -24vw
     }
 }
 
@@ -1745,8 +1768,8 @@ ul {
         top: 5px
     }
 
-    .hover-overlay {
-        width: 84vw;
+    .hover-overlay.flight {
+        width: 85.2vw;
         top: 60px
     }
 
@@ -1763,11 +1786,11 @@ ul {
     }
 
     .hover-overlay.standart {
-        right: -27vw
+        right: -28vw
     }
 
     .hover-overlay.premium {
-        right: -31vw
+        right: -31.3vw
     }
 }
 
@@ -1789,17 +1812,20 @@ ul {
     }
 
     .hover-overlay.standart {
-        right: -23.5vw
+        right: -24.5vw
     }
 
     .hover-overlay.premium {
-        right: -28vw
+        right: -28.1vw
     }
 }
 
 @media (max-width: 425px) {
     .hover-overlay.standart {
-        right:-22vw
+        right:-22.6vw
+    }
+    .hover-overlay.premium {
+        right:-27vw
     }
 }
 
@@ -1808,7 +1834,7 @@ ul {
         margin-right:-10px
     }
 
-    .hover-overlay {
+    .hover-overlay.flight {
         right: -38%
     }
 
@@ -1860,6 +1886,13 @@ ul {
         height: 30px;
         margin-right: 10px
     }
+    .hover-overlay.standart {
+        right: -16.5vw
+    }
+
+    .hover-overlay.premium {
+        right: -22vw
+    }
 }
 
 @media (max-width: 330px) {
@@ -1875,11 +1908,14 @@ ul {
         margin-left: 5px
     }
 
-    .hover-overlay {
+    .hover-overlay.flight {
         width: 80vw;
-        bottom: unset;
         top: 58px;
         right: -6px
+    }
+
+    .hover-overlay.luggage {
+        width: 81vw
     }
 
     .hover-overlay.basic {
@@ -1891,10 +1927,7 @@ ul {
     }
 
     .hover-overlay.premium {
-        right: -19vw
+        right: -20vw
     }
-
-    .hover-overlay.luggage {
-        width: 81vw
-    }
+ 
 }

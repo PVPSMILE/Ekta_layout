@@ -154,7 +154,7 @@
 													<path d="M12.8499 8.9943C12.9881 8.9943 13.1001 9.10627 13.1001 9.2444"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 												</svg>
 												<div class="hover-overlay flight">
-													<p>If your flight is delayed from 4 hours to 8 hours. You will receive compensation according to the fare you purchased. <br> In this case, the Insurer's liability limit is <span style="font-size: 11px; font-weight: 600;">USD</span> <span style="font-weight: 700;">100</span></p>
+													<p>If your flight is delayed from 2 hours to 4 hours. You will receive compensation according to the fare you purchased. <br> In this case, the Insurer's liability limit is <span style="font-size: 11px; font-weight: 600;">USD</span> <span style="font-weight: 700;">100</span></p>
 												</div>
 											</div>
 										</div>
@@ -187,7 +187,7 @@
 									</div>
 								</div>
 								<div onclick="activateOption(this)" class="tariff tariff-button radio__option inactive carousel-slide" style="width: 420px; height: 184px; 	align-items: stretch; padding: 16px 15px 32px;" data-tariff=5>
-									<div class="grid-container button_text" style="display: grid; grid-template-rows: auto auto; gap: 10px;">
+									<div class="grid-container button_text">
 										<div class="col col-inline">
 											<div style="display: inline-block;">Flight delay
 												<br class="br_br">
@@ -201,7 +201,7 @@
 													<path d="M12.8499 8.9943C12.9881 8.9943 13.1001 9.10627 13.1001 9.2444"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 												</svg>
 												<div class="hover-overlay flight">
-													<p>If your flight is delayed for more than 8 hours or canceled. You will receive a refund according to the fare you purchased. <br>In this case, the Insurer's liability limit is 	<span style="font-size: 11px; font-weight: 600;">USD</span> <span style="font-weight: 700;">500</span></p>
+													<p>If your flight is delayed from 4 hours to 8 hours. You will receive compensation according to the fare you purchased. <br> In this case, the Insurer's liability limit is <span style="font-size: 11px; font-weight: 600;">USD</span> <span style="font-weight: 700;">200</span></p>
 												</div>
 											</div>
 										</div>
@@ -428,8 +428,7 @@
 							</div>
 						</div>
 						<script>
-
-							const svgContainers = document.querySelectorAll('.svg-container');
+                            const svgContainers = document.querySelectorAll('.svg-container');
 							svgContainers.forEach(svgContainer => {
 								const svg = svgContainer.querySelector('.custom-svg');
 								const hoverOverlay = svgContainer.querySelector('.hover-overlay');
@@ -441,15 +440,14 @@
 
 										if (container !== svgContainer) {
 											otherOverlay.style.display = 'none';
-											otherSVG.style.fill = ''; // Сбрасываем цвет других SVG
+											otherSVG.style.fill = ''; 
 										}
 									});
-
 									if (hoverOverlay.style.display === 'none' || !hoverOverlay.style.display) {
-										svg.style.fill = '#your-color'; // Замените '#your-color' на желаемый цвет
+										svg.style.fill = '#your-color';
 										hoverOverlay.style.display = 'block';
 									} else {
-										svg.style.fill = ''; // Сбрасываем цвет SVG при повторном клике
+										svg.style.fill = ''; 
 										hoverOverlay.style.display = 'none';
 									}
 								});
@@ -460,7 +458,6 @@
 								for (let i = 0; i < allOptions.length; i++) {
 									allOptions[i].style.display = 'none';
 								}
-
 								let selectedOptions = document.getElementById(option + '-product');
 								selectedOptions.style.display = 'block';
 								if (window.innerWidth < 992) {
@@ -472,7 +469,6 @@
 									allButtons[i].classList.remove('active');
 									allButtons[i].classList.add('inactive');
 								}
-
 								document.querySelector('.choose [data-option="' + option + '"]').classList.add('active');
 								document.querySelector('.choose [data-option="' + option + '"]').classList.remove('inactive');
 							}
@@ -483,17 +479,15 @@
 									allOptionsButtons[i].classList.remove('active');
 									allOptionsButtons[i].classList.add('inactive');
 								}
-
 								option.classList.add('active');
 								option.classList.remove('inactive');
 							}
 
 							const carouselSlides = document.querySelector('.carousel-slides');
 							const slides = carouselSlides.querySelectorAll('.carousel-slide');
-
 							const numSlides = slides.length;
 
-							let transform_num = 96;
+							let transform_num = 87;
 							let currentIndex = 0;
 							let startX = 0;
 							let isDragging = false;
@@ -504,15 +498,21 @@
 								slides[1].style.height = '150px';
 								slides[2].style.height = '150px';
 								document.querySelector('.form form').style.background = `none`;
-
 							}
+							if (window.innerWidth < 768) {
+									transform_num = 83;
+								}
 							if (window.innerWidth < 577) {
-								transform_num = 93;
+								transform_num = 90;
 							}
+							if (window.innerWidth < 479) {
+									transform_num = 94;
+								}
 							if (window.innerWidth < 381) {
 								transform_num = 93;
 								document.querySelector('.form__radio').style.padding = `0 0 0 0`;
 							}
+							
 							window.addEventListener('resize', function() {
 								if (window.innerWidth < 992) {
 									slides[0].style.height = '150px';
@@ -520,14 +520,12 @@
 									slides[2].style.height = '150px';
 									document.querySelectorAll('.form form').style.background = `none`;
 									document.querySelector('.lugage_s').style.alignItems = `flex-start`;
-
 								}
 								else if (window.innerWidth > 991) {
 									slides[0].style.height = '174px';
 									slides[1].style.height = '184px';
 									slides[2].style.height = '208px';
 									document.querySelector('.form form').style.background = `#f4eff8`;
-
 								}
 								if (window.innerWidth < 577) {
 									document.querySelector('.lugage_s').style.alignItems = `flex-start`;
@@ -537,7 +535,6 @@
 									document.querySelector('.form__radio').style.padding = `0 0 0 45px`;
 								}
 							});
-
 							function showSlide(index) {
 								slides.forEach((slide) => {
 									slide.classList.remove('active');
@@ -547,29 +544,24 @@
 
 								carouselSlides.style.transform = `translateX(calc(-${index * (transform_num / numSlides)}% - ${index * 20}px))`;
 							}
-
 							function handleTouchStart(event) {
 								isDragging = true;
 								startX = event.touches[0].clientX;
 								shift = 0;
 							}
-
 							function handleTouchMove(event) {
 								if (!isDragging) return;
 								const currentX = event.touches[0].clientX;
 								shift = startX - currentX;
 							}
-
 							function handleTouchEnd() {
 								if (!isDragging) return;
-
 								isDragging = false;
 								if (shift > 50 && currentIndex < numSlides - 1) {
 									currentIndex++;
 								} else if (shift < -50 && currentIndex > 0) {
 									currentIndex--;
 								}
-
 								showSlide(currentIndex);
 							}
 
@@ -577,34 +569,36 @@
 							carouselSlides.addEventListener('touchmove', handleTouchMove);
 							carouselSlides.addEventListener('touchend', handleTouchEnd);
 
-							// Показать начальный слайд
 							showSlide(currentIndex);
 
-							// JavaScript код
-							const carouselSlides2 = document.querySelector('.carousel-slides-2'); // Переименовали переменную
-							const slides2 = carouselSlides2.querySelectorAll('.carousel-slide'); // Переименовали переменную
-
-							const numSlides2 = slides2.length; // Переименовали переменную
+							const carouselSlides2 = document.querySelector('.carousel-slides-2');
+							const slides2 = carouselSlides2.querySelectorAll('.carousel-slide'); 
+							const numSlides2 = slides2.length;
 
 							let transform_num2 = 81;
-							let currentIndex2 = 0; // Переименовали переменную
-							let startX2 = 0; // Переименовали переменную
-							let isDragging2 = false; // Переименовали переменную
-							let shift2 = 0; // Переименовали переменную
+							let currentIndex2 = 0;
+							let startX2 = 0;
+							let isDragging2 = false;
+							let shift2 = 0;
 
 							if (window.innerWidth < 991) {
 								slides2[0].style.height = '214px';
 								slides2[1].style.height = '214px';
 								slides2[2].style.height = '214px';
 
+								if (window.innerWidth < 768) {
+									transform_num2 = 84;
+								}
 								if (window.innerWidth < 577) {
 									transform_num2 = 96;
 								}
+								if (window.innerWidth < 479) {
+									transform_num2 = 94.5;
+								}
 								if (window.innerWidth < 381) {
-									transform_num2= 94;
+									transform_num2= 93;
 								}
 							}
-
 							window.addEventListener('resize', function() {
 								if (window.innerWidth < 991) {
 									slides2[0].style.height = '214px';
@@ -617,52 +611,40 @@
 									slides2[2].style.height = '150px';
 								}
 							});
-
-							function showSlide2(index) { // Переименовали функцию
+							function showSlide2(index) { 
 								slides2.forEach((slide) => {
 									slide.classList.remove('active');
 									slide.classList.add('inactive');
 								});
 								slides2[index].classList.add('active');
 								carouselSlides2.style.transform = `translateX(calc(-${index * (transform_num2 / numSlides2)}% - ${index * 20}px))`;
-
 							}
-
-							function handleTouchStart2(event) { // Переименовали функцию
+							function handleTouchStart2(event) { 
 								isDragging2 = true;
 								startX2 = event.touches[0].clientX;
 								shift2 = 0;
 							}
-
-							function handleTouchMove2(event) { // Переименовали функцию
+							function handleTouchMove2(event) {
 								if (!isDragging2) return;
 								const currentX = event.touches[0].clientX;
 								shift2 = startX2 - currentX;
 							}
-
-							function handleTouchEnd2() { // Переименовали функцию
+							function handleTouchEnd2() {
 								if (!isDragging2) return;
-
 								isDragging2 = false;
 								if (shift2 > 50 && currentIndex2 < numSlides2 - 1) {
 									currentIndex2++;
 								} else if (shift2 < -50 && currentIndex2 > 0) {
 									currentIndex2--;
 								}
-
 								showSlide2(currentIndex2);
 							}
-
 							carouselSlides2.addEventListener('touchstart', handleTouchStart2);
 							carouselSlides2.addEventListener('touchmove', handleTouchMove2);
 							carouselSlides2.addEventListener('touchend', handleTouchEnd2);
 
-							// Показать начальный слайд
 							showSlide2(currentIndex2);
-
 						</script>
-
-
 						<div class="form__tabs fields">
 							<div class="form__tab form__tab_3 tab active" style="padding: 0 45px 135px 0;">
 								<div class="tab__body" >
@@ -1003,7 +985,7 @@
 		</div>
 	</div>
 </div>
-<link rel=preload as=style href="http://dev6.travel.ic-ekta.com/assets/css/thank.min.css" onload='this.rel="stylesheet"'>
+<link rel=preload as=style href="style.css" onload='this.rel="stylesheet"'>
 <script defer src="http://dev6.travel.ic-ekta.com/assets/libs/validator.min.js"></script>
 <script defer src="http://dev6.travel.ic-ekta.com/assets/js/thank.min.js"></script>
 <script>
