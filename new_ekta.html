@@ -115,7 +115,7 @@
 					</div>
 				</div>
 
-				<div class=form style="max-width: 1000px">
+				<div class=form style="max-width: 1216px">
 					<form class=insurer-form data-toggle=validator>
 						<div class="choose">
 							<div onclick="showOptions('fligth-delay')" data-option="fligth-delay" class="radio__option product active"
@@ -139,13 +139,13 @@
 						</div>
 						<div class="form__radio cards-1" id="fligth-delay-product">
 							<div class="carousel-slides">
-								<div onclick="activateOption(this)" class="tariff tariff-button radio__option active carousel-slide" style="width: 420px; height: 174px; align-items: stretch; padding: 16px 15px 32px;" data-tariff=4>
+								<div onclick="activateOption(this)" class="tariff tariff-button radio__option active carousel-slide" style="height: 174px;" data-tariff=4>
 									<div class="grid-container button_text">
-										<div class="col col-inline" >
+										<div class="col col-inline flight-tariff" >
 											<div style="display: inline-block;">Flight delay
 												<br class="br_br">
 												2-4 hours </div>
-											<div class="svg-container">
+											<div class="svg-container flight">
 												<svg class="custom-svg" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
 													<circle cx="13" cy="12.9998" r="9.00375"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 													<path d="M11.9996 16.5002H14.3099"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -162,12 +162,12 @@
 											<div class="flight_price">
 												<div class="price">
 												<span class="content">
-													<span class="fli-base-price"></span>
+													<span class="fli-base-price">99.99</span>
 													<span class="content_usd">USD</span>
 												</span>
 													<br class="br_br luggage">
 													<span class="sale flight_sale fli-base-price-old-block">
-													<span class="fli-base-price-old"></span>
+													<span class="fli-base-price-old">99.99</span>
 													<span class="content_usd">USD</span>
 													<span class="sale_line"></span>
 												</span>
@@ -186,13 +186,13 @@
 										</ul>
 									</div>
 								</div>
-								<div onclick="activateOption(this)" class="tariff tariff-button radio__option inactive carousel-slide" style="width: 420px; height: 184px; 	align-items: stretch; padding: 16px 15px 32px;" data-tariff=5>
+								<div onclick="activateOption(this)" class="tariff tariff-button radio__option inactive carousel-slide" style="height: 184px;" data-tariff=5>
 									<div class="grid-container button_text">
-										<div class="col col-inline">
+										<div class="col col-inline flight-tariff">
 											<div style="display: inline-block;">Flight delay
 												<br class="br_br">
 												4-8 hours </div>
-											<div class="svg-container">
+											<div class="svg-container flight">
 												<svg class="custom-svg" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
 													<circle cx="13" cy="12.9998" r="9.00375"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 													<path d="M11.9996 16.5002H14.3099"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -208,12 +208,12 @@
 										<div class="col col-inline flight_price">
 											<div class="price">
 												<span class="content">
-													<span class="fli-standart-price"></span>
+													<span class="fli-standart-price">99.99</span>
 													<span class="content_usd">USD</span>
 												</span>
 												<br class="br_br luggage">
 												<span class="sale flight_sale fli-standart-price-old-block">
-													<span class="fli-standart-price-old"></span>
+													<span class="fli-standart-price-old">99.99</span>
 													<span class="content_usd">USD</span>
 													<span class="sale_line"></span>
 												</span>
@@ -232,12 +232,12 @@
 										</ul>
 									</div>
 								</div>
-								<div onclick="activateOption(this)" class="tariff radio__option inactive carousel-slide" style="width: 420px; height: 208px; align-items: stretch; padding: 16px 15px 32px;" data-tariff=6>
-									<div class="grid-container button_text" style="display: grid; grid-template-rows: auto auto; gap: 10px;">
-										<div class="col col-inline eight_h">
+								<div onclick="activateOption(this)" class="tariff tariff-button  radio__option inactive carousel-slide" style="height: 208px;" data-tariff=6>
+									<div class="grid-container button_text">
+										<div class="col col-inline flight-tariff eight_h">
 											<div class="delay_eight">
 												Flight delay 8 hours
-												<div class="svg-container eight_h">
+												<div class="svg-container flight eight_h">
 													<svg class="custom-svg" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
 														<circle cx="13" cy="12.9998" r="9.00375"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 														<path d="M11.9996 16.5002H14.3099"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -255,12 +255,12 @@
 										<div class="col col-inline flight_price">
 											<div class="price">
 												<span class="content">
-													<span class="fli-premium-price">99</span>
+													<span class="fli-premium-price">99.99</span>
 													<span class="content_usd">USD</span>
 												</span>
 												<br class="br_br luggage">
 												<span class="sale flight_sale fli-premium-price-old-block">
-													<span class="fli-premium-price-old">99</span>
+													<span class="fli-premium-price-old">99.99</span>
 													<span class="content_usd">USD</span>
 													<span class="sale_line"></span>
 												</span>
@@ -284,7 +284,7 @@
 						</div>
 						<div class="form__radio cards-2" id="buggage-product">
 							<div class="carousel-slides-2">
-								<div onclick="activateOption(this)" class="tariff tariff-button radio__option active carousel-slide lugage_s" style="width: 420px; height: 150px; padding: 0 20px 0 20px;" data-tariff=21>
+								<div onclick="activateOption(this)" class="tariff tariff-button luggage radio__option active carousel-slide lugage_s" data-tariff=21>
 									<div class="grid-container button_text luggage">
 										<div class="col col-inline">
 											<span class="tariff-luggage">
@@ -306,18 +306,18 @@
 										</div>
 										<div class="col col-inline luggage_compensation">
 											<span>Compensation
-												<span class="compensation lug-base-compensation"></span>
+												<span class="compensation lug-base-compensation">1000</span>
 											</span>
 										</div>
 										<div class="col col-inline luggage_price">
 											<div class="price">
 												<span class="content">
-													<span class="lug-base-price price-value"></span>
+													<span class="lug-base-price price-value">40.00</span>
 													<span class="content_usd">USD</span>
 												</span>
 												<br class="br_br luggage">
 												<span class="sale luggage_sale lug-base-price-old-block">
-													<span class="lug-base-price-old"></span>
+													<span class="lug-base-price-old">99.99</span>
 													<span class="content_usd">USD</span>
 													<span class="sale_line"></span>
 												</span>
@@ -331,7 +331,7 @@
 										</div>
 									</div>
 								</div>
-								<div onclick="activateOption(this)" class="tariff tariff-button radio__option inactive carousel-slide lugage_s" style="width: 420px; height: 150px; padding: 0px 20px 0px 20px;" data-tariff=22>
+								<div onclick="activateOption(this)" class="tariff tariff-button luggage radio__option inactive carousel-slide lugage_s" data-tariff=22>
 									<div class="grid-container button_text luggage"  >
 										<div class="col col-inline" >
 											<span class="tariff-luggage">
@@ -353,18 +353,18 @@
 										</div>
 										<div class="col col-inline luggage_compensation">
 											<span>Compensation
-												<span class="compensation lug-standart-compensation"></span>
+												<span class="compensation lug-standart-compensation">9999</span>
 											</span>
 										</div>
 										<div class="col col-inline luggage_price">
 											<div class="price">
 												<span class="content">
-													<span class="lug-standart-price price-value"></span>
+													<span class="lug-standart-price price-value">99.99</span>
 													<span class="content_usd">USD</span>
 												</span>
 												<br class="br_br luggage">
 												<span class="sale luggage_sale lug-standart-price-old-block" >
-													<span class="sale_usd lug-standart-price-old"></span>
+													<span class="lug-standart-price-old">00.00</span>
 													<span class="content_usd">USD</span>
 													<span class="sale_line"></span>
 												</span>
@@ -378,7 +378,7 @@
 										</div>
 									</div>
 								</div>
-								<div onclick="activateOption(this)" class="tariff radio__option inactive carousel-slide" style="width: 420px; height: 150px; padding: 0px 20px 0px 20px;" data-tariff=23>
+								<div onclick="activateOption(this)" class="tariff tariff-button luggage  inactive carousel-slide" data-tariff=23>
 									<div class="grid-container button_text luggage">
 										<div class="col col-inline" >
 											<span class="tariff-luggage" >
@@ -400,18 +400,18 @@
 										</div>
 										<div class="col col-inline luggage_compensation">
 											<span>Compensation
-												<span class="compensation lug-premium-compensation"></span>
+												<span class="compensation lug-premium-compensation">1290</span>
 											</span>
 										</div>
 										<div class="col col-inline luggage_price">
 											<div class="price">
 												<span class="content">
-													<span class="lug-premium-price price-value"></span>
+													<span class="lug-premium-price price-value">00.00</span>
 													<span class="content_usd">USD</span>
 												</span>
 												<br class="br_br luggage">
 												<span class="sale luggage_sale lug-premium-price-old-block" >
-													<span class="sale_usd lug-premium-price-old"></span>
+													<span class="lug-premium-price-old">00.00</span>
 													<span class="content_usd">USD</span>
 													<span class="sale_line"></span>
 												</span>
@@ -509,8 +509,7 @@
 									transform_num = 94;
 								}
 							if (window.innerWidth < 381) {
-								transform_num = 93;
-								document.querySelector('.form__radio').style.padding = `0 0 0 0`;
+								transform_num = 93;							
 							}
 							
 							window.addEventListener('resize', function() {
@@ -529,11 +528,8 @@
 								}
 								if (window.innerWidth < 577) {
 									document.querySelector('.lugage_s').style.alignItems = `flex-start`;
-									document.querySelector('.form__radio').style.padding = `0 0 0 0`;
-								}
-								else{
-									document.querySelector('.form__radio').style.padding = `0 0 0 45px`;
-								}
+									
+								}		
 							});
 							function showSlide(index) {
 								slides.forEach((slide) => {
@@ -646,7 +642,7 @@
 							showSlide2(currentIndex2);
 						</script>
 						<div class="form__tabs fields">
-							<div class="form__tab form__tab_3 tab active" style="padding: 0 45px 135px 0;">
+							<div class="form__tab form__tab_3 tab active">
 								<div class="tab__body" >
 									<div class=tab__label>
 										<div class=form-group>
