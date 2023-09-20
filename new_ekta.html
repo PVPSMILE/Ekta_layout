@@ -97,7 +97,7 @@
 	}
 	sclClickPixelFn();
 </script>
-<div class=wrapper>
+<div class=wrapper style="overflow: hidden">
 	<main class=main>
 		<section class=thanksgiving>
 			<div class="thanksgiving__container _container">
@@ -105,7 +105,7 @@
 								<div class="thanksgiving__bonus bonus">
 					<div class=bonus__text>
 						<h3 class=bonus__title>And another BONUS for you</h3>
-						<p class=bonus__descr>Additional discount <span class=bonus__percent> 37% </span> for insurance against lost luggage</p>
+						<p class=bonus__descr>37% discount on flight delay and cancellation insurance. If your flight is delayed or canceled, you will receive compensation according to your tariff plan. </p>
 					</div>
 					<div class="bonus__timer timer">
 						<div class=timer__progress><svg viewBox="0 0 244 254" fill=none xmlns="http://www.w3.org/2000/svg"><path fill-rule=evenodd clip-rule=evenodd d="M127.076 243.137C191.17 243.137 243.128 191.179 243.128 127.086C243.128 62.9926 191.17 11.0347 127.076 11.0347C62.983 11.0347 11.0251 62.9926 11.0251 127.086C11.0251 191.179 62.983 243.137 127.076 243.137ZM127.076 236.778C187.658 236.778 236.769 187.667 236.769 127.086C236.769 66.5046 187.658 17.3936 127.076 17.3936C66.495 17.3936 17.384 66.5046 17.384 127.086C17.384 187.667 66.495 236.778 127.076 236.778Z" fill=#000001 /><circle id=base-timer-path-remaining cx=125 cy=125 r=113 stroke-width=7 stroke=url(#paint0_linear) stroke-dasharray=710 transform="rotate(270 127 127)" stroke-linecap=round fill=none></circle><defs><filter id=filter0_d x=0.128193 y=0.128204 width=170.359 height=253.831 filterUnits=userSpaceOnUse color-interpolation-filters=sRGB><feFlood flood-opacity=0 result=BackgroundImageFix /><feColorMatrix in=SourceAlpha type=matrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/><feOffset/><feGaussianBlur stdDeviation=5 /><feColorMatrix type=matrix values="0 0 0 0 0 0 0 0 0 0.28 0 0 0 0 1 0 0 0 0.7 0"/><feBlend mode=normal in2=BackgroundImageFix result=effect1_dropShadow /><feBlend mode=normal in=SourceGraphic in2=effect1_dropShadow result=shape /></filter><linearGradient id=paint0_linear x1=85.3078 y1=10.1282 x2=85.3078 y2=243.959 gradientUnits=userSpaceOnUse><stop offset=0.604167 stop-color=#AC39F2 /><stop offset=1 stop-color=#DE10FF /></linearGradient></defs></svg></div>
@@ -115,7 +115,7 @@
 					</div>
 				</div>
 
-				<div class=form style="max-width: 1216px">
+				<div class=form style="max-width: 1000px">
 					<form class=insurer-form data-toggle=validator>
 						<div class="choose">
 							<div onclick="showOptions('fligth-delay')" data-option="fligth-delay" class="radio__option product active"
@@ -139,13 +139,13 @@
 						</div>
 						<div class="form__radio cards-1" id="fligth-delay-product">
 							<div class="carousel-slides">
-								<div onclick="activateOption(this)" class="tariff tariff-button radio__option active carousel-slide" style="height: 174px;" data-tariff=4>
+								<div onclick="activateOption(this)" class="tariff tariff-button radio__option active carousel-slide" style="width: 420px; height: 174px; align-items: stretch; padding: 16px 15px 32px;" data-tariff=4>
 									<div class="grid-container button_text">
-										<div class="col col-inline flight-tariff" >
+										<div class="col col-inline" >
 											<div style="display: inline-block;">Flight delay
 												<br class="br_br">
 												2-4 hours </div>
-											<div class="svg-container flight">
+											<div class="svg-container">
 												<svg class="custom-svg" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
 													<circle cx="13" cy="12.9998" r="9.00375"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 													<path d="M11.9996 16.5002H14.3099"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -162,12 +162,12 @@
 											<div class="flight_price">
 												<div class="price">
 												<span class="content">
-													<span class="fli-base-price">99.99</span>
+													<span class="fli-base-price"></span>
 													<span class="content_usd">USD</span>
 												</span>
 													<br class="br_br luggage">
 													<span class="sale flight_sale fli-base-price-old-block">
-													<span class="fli-base-price-old">99.99</span>
+													<span class="fli-base-price-old"></span>
 													<span class="content_usd">USD</span>
 													<span class="sale_line"></span>
 												</span>
@@ -186,13 +186,14 @@
 										</ul>
 									</div>
 								</div>
-								<div onclick="activateOption(this)" class="tariff tariff-button radio__option inactive carousel-slide" style="height: 184px;" data-tariff=5>
+								<div onclick="activateOption(this)" class="tariff tariff-button radio__option inactive carousel-slide" style="width: 420px; height: 184px; 	align-items: stretch; padding: 16px 15px 32px;" data-tariff=5>
 									<div class="grid-container button_text">
-										<div class="col col-inline flight-tariff">
+										<div class="col col-inline">
 											<div style="display: inline-block;">Flight delay
 												<br class="br_br">
-												4-8 hours </div>
-											<div class="svg-container flight">
+												4-8 hours
+											</div>
+											<div class="svg-container">
 												<svg class="custom-svg" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
 													<circle cx="13" cy="12.9998" r="9.00375"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 													<path d="M11.9996 16.5002H14.3099"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -208,12 +209,12 @@
 										<div class="col col-inline flight_price">
 											<div class="price">
 												<span class="content">
-													<span class="fli-standart-price">99.99</span>
+													<span class="fli-standart-price"></span>
 													<span class="content_usd">USD</span>
 												</span>
 												<br class="br_br luggage">
 												<span class="sale flight_sale fli-standart-price-old-block">
-													<span class="fli-standart-price-old">99.99</span>
+													<span class="fli-standart-price-old"></span>
 													<span class="content_usd">USD</span>
 													<span class="sale_line"></span>
 												</span>
@@ -232,12 +233,12 @@
 										</ul>
 									</div>
 								</div>
-								<div onclick="activateOption(this)" class="tariff tariff-button  radio__option inactive carousel-slide" style="height: 208px;" data-tariff=6>
-									<div class="grid-container button_text">
-										<div class="col col-inline flight-tariff eight_h">
+								<div onclick="activateOption(this)" class="tariff radio__option inactive carousel-slide" style="width: 420px; height: 208px; align-items: stretch; padding: 16px 15px 32px;" data-tariff=6>
+									<div class="grid-container button_text" style="display: grid; grid-template-rows: auto auto; gap: 10px;">
+										<div class="col col-inline eight_h">
 											<div class="delay_eight">
 												Flight delay 8 hours
-												<div class="svg-container flight eight_h">
+												<div class="svg-container eight_h">
 													<svg class="custom-svg" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
 														<circle cx="13" cy="12.9998" r="9.00375"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 														<path d="M11.9996 16.5002H14.3099"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -246,7 +247,7 @@
 														<path d="M12.8499 8.9943C12.9881 8.9943 13.1001 9.10627 13.1001 9.2444"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 													</svg>
 													<div class="hover-overlay flight">
-														<p>If your flight is delayed for more than 8 hours or canceled. You will receive a refund according to the fare you purchased. <br>In this case, the Insurer's liability limit is 	<span style="font-size: 11px; font-weight: 600;">USD</span> <span style="font-weight: 700;">500</span></p>
+														<p>If your flight is delayed for more than 8 hours or canceled. You will receive a refund according to the fare you purchased. <br>In this case, the Insurer's liability limit is <span style="font-size: 11px; font-weight: 600;">USD</span> <span style="font-weight: 700;">500</span></p>
 													</div>
 												</div>
 											</div>
@@ -255,12 +256,12 @@
 										<div class="col col-inline flight_price">
 											<div class="price">
 												<span class="content">
-													<span class="fli-premium-price">99.99</span>
+													<span class="fli-premium-price">99</span>
 													<span class="content_usd">USD</span>
 												</span>
 												<br class="br_br luggage">
 												<span class="sale flight_sale fli-premium-price-old-block">
-													<span class="fli-premium-price-old">99.99</span>
+													<span class="fli-premium-price-old">99</span>
 													<span class="content_usd">USD</span>
 													<span class="sale_line"></span>
 												</span>
@@ -284,7 +285,7 @@
 						</div>
 						<div class="form__radio cards-2" id="buggage-product">
 							<div class="carousel-slides-2">
-								<div onclick="activateOption(this)" class="tariff tariff-button luggage radio__option active carousel-slide lugage_s" data-tariff=21>
+								<div onclick="activateOption(this)" class="tariff tariff-button radio__option active carousel-slide lugage_s" style="width: 420px; height: 150px; padding: 0 20px 0 20px;" data-tariff=21>
 									<div class="grid-container button_text luggage">
 										<div class="col col-inline">
 											<span class="tariff-luggage">
@@ -298,7 +299,7 @@
 														<path d="M12.8499 8.9943C12.9881 8.9943 13.1001 9.10627 13.1001 9.2444"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 													</svg>
 													<div class="hover-overlay luggage basic">
-														<p>If your luggage is lost, the first part of the 100 <span style="font-size: 13px; font-weight: 500;">USD</span>  compensation will be paid to you within 24 hours. <br>  If the luggage is not found and lost within <br>  the 21st calendar day, the second part of the 100 <span style="font-size: 13px; font-weight: 500;">USD</span>  compensation will be paid to you within 24 hours.</p>
+														<p>If your luggage is lost, the first part of the 100 <span class= "usd-class">USD</span>  compensation will be paid to you within 24 hours. <br>  If the luggage is not found and lost within <br>  the 21st calendar day, the second part of the 100 <span class="usd-class">USD</span>  compensation will be paid to you within 24 hours.</p>
 													</div>
 												</div>
 											</span>
@@ -306,18 +307,18 @@
 										</div>
 										<div class="col col-inline luggage_compensation">
 											<span>Compensation
-												<span class="compensation lug-base-compensation">1000</span>
+												<span class="compensation lug-base-compensation"></span>
 											</span>
 										</div>
 										<div class="col col-inline luggage_price">
 											<div class="price">
 												<span class="content">
-													<span class="lug-base-price price-value">40.00</span>
+													<span class="lug-base-price price-value"></span>
 													<span class="content_usd">USD</span>
 												</span>
 												<br class="br_br luggage">
 												<span class="sale luggage_sale lug-base-price-old-block">
-													<span class="lug-base-price-old">99.99</span>
+													<span class="lug-base-price-old"></span>
 													<span class="content_usd">USD</span>
 													<span class="sale_line"></span>
 												</span>
@@ -331,7 +332,7 @@
 										</div>
 									</div>
 								</div>
-								<div onclick="activateOption(this)" class="tariff tariff-button luggage radio__option inactive carousel-slide lugage_s" data-tariff=22>
+								<div onclick="activateOption(this)" class="tariff tariff-button radio__option inactive carousel-slide lugage_s" style="width: 420px; height: 150px; padding: 0px 20px 0px 20px;" data-tariff=22>
 									<div class="grid-container button_text luggage"  >
 										<div class="col col-inline" >
 											<span class="tariff-luggage">
@@ -345,7 +346,7 @@
 														<path d="M12.8499 8.9943C12.9881 8.9943 13.1001 9.10627 13.1001 9.2444"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 													</svg>
 													<div class="hover-overlay luggage standart">
-														<p>If your luggage is lost, the first part of the 100 <span style="font-size: 13px; font-weight: 500;">USD</span>  compensation will be paid to you within 24 hours. <br>  If the luggage is not found and lost within <br>  the 21st calendar day, the second part of the 100 <span style="font-size: 13px; font-weight: 500;">USD</span>  compensation will be paid to you within 24 hours.</p>
+														<p>If your luggage is lost, the first part of the 250 <span class="usd-class">USD</span>  compensation will be paid to you within 24 hours. <br>  If the luggage is not found and lost within <br>  the 21st calendar day, the second part of the 250 <span class="usd-class">USD</span>  compensation will be paid to you within 24 hours.</p>
 													</div>
 												</div>
 											</span>
@@ -353,18 +354,18 @@
 										</div>
 										<div class="col col-inline luggage_compensation">
 											<span>Compensation
-												<span class="compensation lug-standart-compensation">9999</span>
+												<span class="compensation lug-standart-compensation"></span>
 											</span>
 										</div>
 										<div class="col col-inline luggage_price">
 											<div class="price">
 												<span class="content">
-													<span class="lug-standart-price price-value">99.99</span>
+													<span class="lug-standart-price price-value"></span>
 													<span class="content_usd">USD</span>
 												</span>
 												<br class="br_br luggage">
 												<span class="sale luggage_sale lug-standart-price-old-block" >
-													<span class="lug-standart-price-old">00.00</span>
+													<span class="sale_usd lug-standart-price-old"></span>
 													<span class="content_usd">USD</span>
 													<span class="sale_line"></span>
 												</span>
@@ -378,7 +379,7 @@
 										</div>
 									</div>
 								</div>
-								<div onclick="activateOption(this)" class="tariff tariff-button luggage  inactive carousel-slide" data-tariff=23>
+								<div onclick="activateOption(this)" class="tariff radio__option inactive carousel-slide" style="width: 420px; height: 150px; padding: 0px 20px 0px 20px;" data-tariff=23>
 									<div class="grid-container button_text luggage">
 										<div class="col col-inline" >
 											<span class="tariff-luggage" >
@@ -392,7 +393,7 @@
 														<path d="M12.8499 8.9943C12.9881 8.9943 13.1001 9.10627 13.1001 9.2444"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
 													</svg>
 													<div class="hover-overlay luggage premium">
-														<p>If your luggage is lost, the first part of the 100 <span style="font-size: 13px; font-weight: 500;">USD</span>  compensation will be paid to you within 24 hours. <br>  If the luggage is not found and lost within <br>  the 21st calendar day, the second part of the 100 <span style="font-size: 13px; font-weight: 500;">USD</span>  compensation will be paid to you within 24 hours.</p>
+														<p>If your luggage is lost, the first part of the 600 <span style="font-size: 13px; font-weight: 500;">USD</span>  compensation will be paid to you within 24 hours. <br>  If the luggage is not found and lost within <br>  the 21st calendar day, the second part of the 600 <span style="font-size: 13px; font-weight: 500;">USD</span>  compensation will be paid to you within 24 hours.</p>
 													</div>
 												</div>
 											</span>
@@ -400,18 +401,18 @@
 										</div>
 										<div class="col col-inline luggage_compensation">
 											<span>Compensation
-												<span class="compensation lug-premium-compensation">1290</span>
+												<span class="compensation lug-premium-compensation"></span>
 											</span>
 										</div>
 										<div class="col col-inline luggage_price">
 											<div class="price">
 												<span class="content">
-													<span class="lug-premium-price price-value">00.00</span>
+													<span class="lug-premium-price price-value"></span>
 													<span class="content_usd">USD</span>
 												</span>
 												<br class="br_br luggage">
 												<span class="sale luggage_sale lug-premium-price-old-block" >
-													<span class="lug-premium-price-old">00.00</span>
+													<span class="sale_usd lug-premium-price-old"></span>
 													<span class="content_usd">USD</span>
 													<span class="sale_line"></span>
 												</span>
@@ -428,7 +429,7 @@
 							</div>
 						</div>
 						<script>
-                            const svgContainers = document.querySelectorAll('.svg-container');
+							const svgContainers = document.querySelectorAll('.svg-container');
 							svgContainers.forEach(svgContainer => {
 								const svg = svgContainer.querySelector('.custom-svg');
 								const hoverOverlay = svgContainer.querySelector('.hover-overlay');
@@ -436,18 +437,14 @@
 								svg.addEventListener('click', () => {
 									svgContainers.forEach(container => {
 										const otherOverlay = container.querySelector('.hover-overlay');
-										const otherSVG = container.querySelector('.custom-svg');
 
 										if (container !== svgContainer) {
 											otherOverlay.style.display = 'none';
-											otherSVG.style.fill = ''; 
 										}
 									});
 									if (hoverOverlay.style.display === 'none' || !hoverOverlay.style.display) {
-										svg.style.fill = '#your-color';
 										hoverOverlay.style.display = 'block';
 									} else {
-										svg.style.fill = ''; 
 										hoverOverlay.style.display = 'none';
 									}
 								});
@@ -471,6 +468,16 @@
 								}
 								document.querySelector('.choose [data-option="' + option + '"]').classList.add('active');
 								document.querySelector('.choose [data-option="' + option + '"]').classList.remove('inactive');
+
+								let insuranceLink = document.getElementById("terms");
+								let bonus_descr = document.querySelector(".bonus__descr")
+								if (option === 'fligth-delay'){
+									bonus_descr.textContent = "37% discount on flight delay and cancellation insurance. If your flight is delayed or canceled, you will receive compensation according to your tariff plan."
+									insuranceLink.href = "https://ekta.insure/wp-content/uploads/documents/terms_insurance_flight_delay_or_cancellation_EN_15.08.2023.pdf";
+								}else{
+									bonus_descr.textContent = "37% discount on baggage loss insurance. If your luggage is delayed or lost, you will receive compensation"
+									insuranceLink.href = "https://ic-ekta-public.s3.eu-central-1.amazonaws.com/luggage_offerta_26-09-22_en.pdf";
+								}
 							}
 
 							function activateOption(option) {
@@ -497,39 +504,40 @@
 								slides[0].style.height = '150px';
 								slides[1].style.height = '150px';
 								slides[2].style.height = '150px';
-								document.querySelector('.form form').style.background = `none`;
 							}
 							if (window.innerWidth < 768) {
-									transform_num = 83;
-								}
+								transform_num = 83;
+							}
 							if (window.innerWidth < 577) {
 								transform_num = 90;
 							}
 							if (window.innerWidth < 479) {
-									transform_num = 94;
-								}
-							if (window.innerWidth < 381) {
-								transform_num = 93;							
+								transform_num = 94;
 							}
-							
+							if (window.innerWidth < 381) {
+								transform_num = 93;
+								document.querySelector('.form__radio').style.padding = `0 0 0 0`;
+							}
+
 							window.addEventListener('resize', function() {
 								if (window.innerWidth < 992) {
 									slides[0].style.height = '150px';
 									slides[1].style.height = '150px';
 									slides[2].style.height = '150px';
-									document.querySelectorAll('.form form').style.background = `none`;
 									document.querySelector('.lugage_s').style.alignItems = `flex-start`;
 								}
 								else if (window.innerWidth > 991) {
 									slides[0].style.height = '174px';
 									slides[1].style.height = '184px';
 									slides[2].style.height = '208px';
-									document.querySelector('.form form').style.background = `#f4eff8`;
 								}
 								if (window.innerWidth < 577) {
 									document.querySelector('.lugage_s').style.alignItems = `flex-start`;
-									
-								}		
+									document.querySelector('.form__radio').style.padding = `0 0 0 0`;
+								}
+								else{
+									document.querySelector('.form__radio').style.padding = `0 0 0 45px`;
+								}
 							});
 							function showSlide(index) {
 								slides.forEach((slide) => {
@@ -568,7 +576,7 @@
 							showSlide(currentIndex);
 
 							const carouselSlides2 = document.querySelector('.carousel-slides-2');
-							const slides2 = carouselSlides2.querySelectorAll('.carousel-slide'); 
+							const slides2 = carouselSlides2.querySelectorAll('.carousel-slide');
 							const numSlides2 = slides2.length;
 
 							let transform_num2 = 81;
@@ -607,7 +615,7 @@
 									slides2[2].style.height = '150px';
 								}
 							});
-							function showSlide2(index) { 
+							function showSlide2(index) {
 								slides2.forEach((slide) => {
 									slide.classList.remove('active');
 									slide.classList.add('inactive');
@@ -615,7 +623,7 @@
 								slides2[index].classList.add('active');
 								carouselSlides2.style.transform = `translateX(calc(-${index * (transform_num2 / numSlides2)}% - ${index * 20}px))`;
 							}
-							function handleTouchStart2(event) { 
+							function handleTouchStart2(event) {
 								isDragging2 = true;
 								startX2 = event.touches[0].clientX;
 								shift2 = 0;
@@ -642,7 +650,7 @@
 							showSlide2(currentIndex2);
 						</script>
 						<div class="form__tabs fields">
-							<div class="form__tab form__tab_3 tab active">
+							<div class="form__tab form__tab_3 tab active" style="padding: 0 45px 135px 0;">
 								<div class="tab__body" >
 									<div class=tab__label>
 										<div class=form-group>
@@ -655,14 +663,14 @@
 										<label for=date_flight>Departure Date</label>
 										<input class=valid value="2023.08.19" name=date_flight id=date_flight autocomplete=password required>
 									</div>
-									<div class="tab__label flight-return br_br">
+									<div class="tab__label flight-return d-none">
 										<div class=form-group>
 											<label for=flight_number_return>Flight number Return</label>
 											<input id=flight_number_return name=flight_number_return placeholder="FR 1214" data-error="Please fill in this field.">
 											<div class="help-block with-errors"></div>
 										</div>
 									</div>
-									<div class="tab__label date-return br_br">
+									<div class="tab__label date-return d-none">
 										<label for=date_flight_return>Return Date</label>
 										<input class=valid value="2023.08.19" name=date_flight_return id=date_flight_return autocomplete=password>
 									</div>
@@ -694,7 +702,7 @@
 										<div class="form-group col-md-12">
 											<label>
 												<input type=checkbox data-error="You must accept the terms" name=agreement_conditions id=agreement_conditions required>
-												<span>You must agree to the <a href="https://ic-ekta-public.s3.eu-central-1.amazonaws.com/luggage_offerta_26-09-22_en.pdf" target="_blank"> insurance terms and conditions </a></span>
+												<span>You must agree to the <a id="terms" href="https://ekta.insure/wp-content/uploads/documents/terms_insurance_flight_delay_or_cancellation_EN_15.08.2023.pdf" target="_blank"> insurance terms and conditions </a></span>
 											</label>
 											<div class="help-block with-errors"></div>
 										</div>
@@ -779,6 +787,12 @@
 				<a href="/it/"
 				   data-value=it class=""><span
 						class="flag-icon flag-icon-it flag-icon-squared"></span> ita</a>
+				<a href="/ja/"
+				   data-value=ja class=""><span
+							class="flag-icon flag-icon-ja flag-icon-squared"></span> jpn</a>
+				<a href="/ko/"
+				   data-value=ko class=""><span
+							class="flag-icon flag-icon-ko flag-icon-squared"></span> kor</a>
 				<a href="/pl/"
 				   data-value=pl class=""><span
 						class="flag-icon flag-icon-pl flag-icon-squared"></span> pol</a>
@@ -1040,9 +1054,9 @@
 	let sa = "SA";
 	let lang_from = "from";
 	let lang_to = "to";
-	let currentTime = "1694883392";
-	let eventTime = "3389766784";
-	let timeNow = "1694883392";
+	let currentTime = "1695209640";
+	let eventTime = "3390419280";
+	let timeNow = "1695209640";
 	let date_flight = ""
 	document.addEventListener('DOMContentLoaded', function(){
 		// Пробуем заполнить форму из переданных ранее данных

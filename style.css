@@ -89,7 +89,7 @@
 }
 
 .thanksgiving__container {
-    max-width: 1316px
+    max-width: 1080px
 }
 
 .thanksgiving__title {
@@ -130,6 +130,10 @@
 
 .thanksgiving__bonus {
     margin-bottom: 50px
+}
+
+.thanksgiving .form__radio {
+    padding: 100px 0 0 25px
 }
 
 .last-step {
@@ -273,7 +277,7 @@
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    background: #bc66e4 url(../img/thanksgiving/bonus-bg.png)0 0/cover no-repeat;
+    background: #5d3981 url(../img/thanksgiving/bonus-bg.png)0 0/cover no-repeat;
     -webkit-box-shadow: 0 6px 15px rgba(0,0,0,.25);
     box-shadow: 0 6px 15px rgba(0,0,0,.25)
 }
@@ -327,38 +331,7 @@
 
 .form form {
     background: #f4eff8;
-    padding-bottom: 20px;
-    display: grid;
-    grid-gap: 10px;
-    grid-column-gap: 20px;
-    height: 900px;
-    padding: 0 80px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 96px 700px;
-    grid-template-areas: 
-    'choose choose'
-    'form__radio fields';
-}
-
-.form__tabs.fields {
-    padding-left: 0px;
-    grid-area: fields;
-}
-
-.thanksgiving .form__radio {
-    grid-area: form__radio;
-}
-
-.tariff.tariff-button{
-    width: 100%;
-    align-items: stretch;
-    padding: 16px 24px 32px;
-}
-.tariff.tariff-button.luggage{
-    height: 150px;
-    margin-bottom: 48px;
-    align-items: stretch;
-    padding: 40px 32px;
+    padding-bottom: 20px
 }
 
 .form__header {
@@ -400,7 +373,7 @@
 
 .form__tab {
     width: 100%;
-    padding: 0;
+    padding: 45px 45px 35px 0
 }
 
 .form__tab.active,.thanksgiving .form__radio.cards-1 {
@@ -511,7 +484,7 @@
 }
 
 .tab__label.date::before {
-    top: 24px
+    top: 23px
 }
 
 .tab__label input,.tab__label label {
@@ -701,7 +674,7 @@
 }
 
 .content {
-    font-size: 26px
+    font-size: 24px
 }
 
 .compensation,.content_usd {
@@ -714,10 +687,8 @@
 }
 
 .thanksgiving .form__radio.cards-1,.thanksgiving .form__radio.cards-2 {
-    padding: 0;
-    text-align: start;
-    width: 100%;
-    max-width: 513px;
+    padding: 0 0 0 45px;
+    text-align: start
 }
 
 .choose,.container {
@@ -732,13 +703,14 @@
 }
 
 .choose {
-    justify-content: center;    
-    grid-area: choose;
+    justify-content: center;
+    height: 15vh
 }
 
 .form__radio {
     display: none;
     text-align: center;
+    padding: 45px 0 0 25px
 }
 
 .button_text {
@@ -756,7 +728,7 @@
     font-weight: 700;
     line-height: 14px;
     text-transform: uppercase;
-    width: 221px;
+    width: 220px
 }
 
 .col.col-inline.eight_h,ul {
@@ -882,7 +854,9 @@ ul {
     color: #9d9d9d
 }
 
-
+.form__tabs.fields {
+    padding-left: 500px
+}
 
 .choose-buttons {
     font-family: "Raleway";
@@ -912,13 +886,11 @@ ul {
 .grid-container {
     display: grid;
     grid-template-rows: auto auto;
-    gap: 10px;
-    grid-column-gap: 13px;
+    gap: 10px
 }
 
-.grid-container.luggage {  
-    gap: 0px;
-    grid-column-gap: 80px;
+.grid-container.luggage {
+    column-gap: 20px
 }
 
 .col.col-inline {
@@ -936,12 +908,7 @@ ul {
     display: inline-block;
     margin-left: 0
 }
-.svg-container.flight {
-    padding-left: 11px;
-}
-.col.col-inline.flight-tariff {
-    width: 306px;
-}
+
 .hover-overlay {
     color: #000;
     font-size: 16px;
@@ -1000,7 +967,7 @@ ul {
 
 .col.col-inline,.col.col-inline.flight_price {
     display: flex;
-    justify-content:flex-start ;
+    justify-content: space-between
 }
 
 .price {
@@ -1029,11 +996,11 @@ ul {
     border-bottom: none;
     gap: 24px
 }
-.delay_eight {
-    display: flex;
-    justify-content: flex-start
-}
 
+.col.col-inline.luggage_price,.delay_eight {
+    display: flex;
+    justify-content: space-between
+}
 
 .tab__body .tab__label label {
     padding: 0;
@@ -1069,6 +1036,15 @@ ul {
 
 .form-group {
     margin-bottom: 0!important
+}
+
+.usd-class {
+    font-size: 13px;
+    font-weight: 500
+}
+
+.d-none {
+    display: none
 }
 
 @media (min-width: 1440px) {
@@ -1156,49 +1132,8 @@ ul {
         font-size: 14px
     }
 }
-@media (max-width: 1216px) {
-    .form form{
-        padding: 0 15px;
-    }
-    .tariff.tariff-button {
-        padding: 16px 15px 32px;
-    }
-    .grid-container.luggage {
-        column-gap: 30px;
-    }
-    .tariff.tariff-button.luggage {
-        padding: 40px 0px;
-    }
-    
-}
+
 @media (max-width: 992px) {
-    .delay_eight{
-        justify-content: space-between;
-    }
-    .col.col-inline.flight-tariff {
-        justify-content: space-between;
-        width: unset;
-    }
-    .col.col-inline.flight_price {
-        justify-content: space-between;
-    }
-    .tariff.tariff-button.luggage {
-        padding: 40px 80px;
-        
-    }
-    .tariff.tariff-button {
-        max-width: 420px;
-        min-width: 420px;      
-    }
-    .form__radio.cards-1,.form__radio.cards-2 {
-        margin: 23px 0 0 0;
-    }
-    .form form{
-        height: unset;
-        display: block;
-        background-color: unset;
-        padding: 0px;
-    }
     ._container {
         padding-left:30px;
         padding-right: 30px
@@ -1301,11 +1236,15 @@ ul {
         -ms-grid-column: 1;
         -ms-grid-column-span: 2;
         grid-column: 1/3;
-        padding-top: 100px
+        padding-top: 80px
     }
 
     .form__tabs .form__header.active {
         display: block
+    }
+
+    .form__tab {
+        padding: 25px 30px 35px
     }
 
     .form__btn {
@@ -1373,16 +1312,18 @@ ul {
     }
 
     .col.col-inline.luggage_price {
-        display: flex;
         grid-row: 2;
-        justify-content: space-between; 
+        justify-content: space-between
     }
 
-    .price {
+    .col.col-inline.luggage_price,.price {
         display: flex;
-        justify-content: space-between; 
-        align-items: center;
-        width: 225px 
+        align-items: flex-start;
+        width: 225px
+    }
+
+    .col.col-inline.luggage_price .price {
+        width: 185px
     }
 
     .col.col-inline.flight_price .price {
@@ -1392,24 +1333,25 @@ ul {
     .content {
         font-size: 26px;
         order: 2;
-        padding: 0 8px
+        padding: 0 4px
     }
 
     .luggage_price .content {
         font-size: 26px;
         order: 1;
         padding: 0;
-        width: 119px
+        width: 116px
     }
 
     .luggage_price .radio-svg,.radio-svg {
         position: relative;
-        order: 3;
-        padding: 0px;
+        order: 3
     }
 
     .luggage_price .luggage_sale {
+        margin-left: 35px;
         order: 2;
+        padding: 0
     }
 
     .flight_sale {
@@ -1475,32 +1417,32 @@ ul {
         bottom: 60px
     }
 
-    .hover-overlay{
+    .hover-overlay {
         bottom: unset;
         left: unset;
-        right: -44%;
-        width: 421px;
+        right: -60%;
+        width: 421px
     }
 
-    .hover-overlay.flight  {     
-        top: 100%; 
+    .hover-overlay.flight {
+        top: 100%
     }
 
     .hover-overlay.luggage {
-        width: 422px;      
-        top: 40px;     
+        width: 422px;
+        top: 40px
     }
 
     .hover-overlay.basic {
-        right: -761%
+        right: -695%
     }
 
     .hover-overlay.standart {
-        right: -470%
+        right: -403%
     }
 
     .hover-overlay.premium {
-        right: -560%
+        right: -491%
     }
 
     .choose {
@@ -1512,9 +1454,7 @@ ul {
     }
 
     .form__radio .tariff.active ul,.form__radio .tariff.inactive ul {
-        color: #000;
-        max-width: 420px;
-        width: 100%;
+        color: #000
     }
 
     .form__radio .tariff ul {
@@ -1522,15 +1462,13 @@ ul {
         top: 170px
     }
 
+    .form__tabs.fields {
+        padding-left: 45px
+    }
+
     .col.col-inline.bagge {
         grid-row: 2;
         margin-left: 0
-    }
-    .sale .content_usd{
-        display: none;
-    }
-    .luggage_sale{
-        padding: 0 8px;
     }
 }
 
@@ -1618,20 +1556,17 @@ ul {
     .last-step__steps {
         margin-left: 0
     }
-   
+
     .hover-overlay.flight {
-        height: auto;
+        width: 65.8vw
     }
+
     .carousel-slides-2 {
         width: 250%
     }
-    
 }
 
 @media (max-width: 576px) {
-    .tariff.tariff-button {
-        min-width: unset;      
-    }
     .form__price {
         padding-top:0
     }
@@ -1714,7 +1649,7 @@ ul {
     }
 
     .bonus {
-        background: #bc66e4 url(../img/thanksgiving/bonus-bg-m.png)0 0/cover no-repeat
+        background: #5d3981 url(../img/thanksgiving/bonus-bg-m.png)0 0/cover no-repeat
     }
 
     .bonus__title::after {
@@ -1781,16 +1716,15 @@ ul {
     }
 
     .hover-overlay.flight {
-        width: 74.1vw; 
+        width: 74.1vw
     }
-
-    
 }
 
 @media (max-width: 530px) {
     .hover-overlay.flight {
         width:74vw
     }
+
     .hover-overlay.luggage {
         width: 81vw
     }
@@ -1809,9 +1743,6 @@ ul {
 }
 
 @media (max-width: 479px) {
-    .tariff.tariff-button.luggage {
-        padding: 40px 60px;
-    }
     .col.col-inline.luggage_price .price {
         width:182px
     }
@@ -1898,19 +1829,16 @@ ul {
 }
 
 @media (max-width: 425px) {
-    .tariff.tariff-button.luggage {
-        padding: 40px 20px;
-    }
     .hover-overlay.standart {
         right:-22.6vw
     }
+
     .hover-overlay.premium {
-        right:-27vw
+        right: -27vw
     }
 }
 
 @media (max-width: 380px) {
-
     .col.col-inline {
         margin-right:-10px
     }
@@ -1932,6 +1860,10 @@ ul {
         font-size: 19px
     }
 
+    .svg-container {
+        margin-left: 64px
+    }
+
     .svg-container.eight_h {
         margin-left: 5px
     }
@@ -1941,7 +1873,7 @@ ul {
     }
 
     .hover-overlay.basic {
-        right: -35vw
+        right: -42vw;
     }
 
     .hover-overlay.standart {
@@ -1963,6 +1895,7 @@ ul {
         height: 30px;
         margin-right: 10px
     }
+
     .hover-overlay.standart {
         right: -16.5vw
     }
@@ -1975,6 +1908,10 @@ ul {
 @media (max-width: 330px) {
     .button_text.eight_h {
         font-size:19px
+    }
+
+    .svg-container {
+        margin-left: 50px
     }
 
     .svg-container.eight_h {
@@ -2002,5 +1939,4 @@ ul {
     .hover-overlay.premium {
         right: -20vw
     }
- 
 }
