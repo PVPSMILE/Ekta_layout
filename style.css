@@ -1134,6 +1134,9 @@ ul {
 }
 
 @media (max-width: 992px) {
+    .form form{
+        background-color: unset;
+    }
     ._container {
         padding-left:30px;
         padding-right: 30px
@@ -1834,7 +1837,7 @@ ul {
     }
 
     .hover-overlay.premium {
-        right: -27vw
+        right: -27.5vw
     }
 }
 
@@ -1873,11 +1876,12 @@ ul {
     }
 
     .hover-overlay.basic {
-        right: -42vw;
-    }
+        right: -35vw;
+    } 
 
     .hover-overlay.standart {
-        right: -18.2vw
+		width: 85vw;
+        right: -19.2vw
     }
 
     .hover-overlay.premium {
@@ -1933,7 +1937,7 @@ ul {
     }
 
     .hover-overlay.standart {
-        right: -13.5vw
+        right: -13.7vw
     }
 
     .hover-overlay.premium {
