@@ -860,7 +860,7 @@ ul {
 
 .choose-buttons {
     font-family: "Raleway";
-    font-size: 24px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: normal
@@ -1134,11 +1134,15 @@ ul {
 }
 
 @media (max-width: 992px) {
-    .form form{
-        background-color: unset;
+    .form form {
+        background-color:unset;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center
     }
+
     ._container {
-        padding-left:30px;
+        padding-left: 30px;
         padding-right: 30px
     }
 
@@ -1218,12 +1222,6 @@ ul {
 
     .form {
         max-width: 500px
-    }
-
-    .form form {
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center
     }
 
     .form__header {
@@ -1876,11 +1874,11 @@ ul {
     }
 
     .hover-overlay.basic {
-        right: -35vw;
-    } 
+        right: -35vw
+    }
 
     .hover-overlay.standart {
-		width: 85vw;
+        width: 85vw;
         right: -19.2vw
     }
 
