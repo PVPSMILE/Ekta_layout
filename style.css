@@ -1496,15 +1496,13 @@ ul {
     }
 
     .hover-overlay.flight {
-        display: block;
         top: 100%
     }
 
     .tariff.tariff-button.luggage {
         padding: 40px 98px;
     }
-    .hover-overlay.luggage {
-       
+    .hover-overlay.luggage { 
         width: 422px;
         top: 40px
     }
