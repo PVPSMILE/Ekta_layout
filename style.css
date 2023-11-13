@@ -109,11 +109,6 @@
     margin-bottom: 32px
 }
 
-.thanksgiving__title::after {
-    content: url(../img/thanksgiving/title-ok.svg);
-    padding: 0 13px
-}
-
 .thanksgiving__last-step {
     margin-bottom: 32px
 }
@@ -283,7 +278,7 @@
 }
 
 .bonus__text {
-    max-width: 480px;
+    max-width: 600px;
     padding: 12px 0 20px
 }
 
@@ -335,10 +330,9 @@
     display: grid;
     grid-gap: 10px;
     grid-column-gap: 20px;
-    height: 900px;
     padding: 0 80px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 96px 700px;
+    grid-template-rows: minmax(96px, auto) max-content;
     grid-template-areas: 
     'choose choose'
     'form__radio fields';
@@ -759,7 +753,6 @@
     font-family: "Inter";
     font-weight: 700;
     line-height: 14px;
-    text-transform: uppercase;
     width: 221px
 }
 
@@ -984,10 +977,9 @@ ul {
 }
 
 .col.luggage_compensation {
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 500;
     line-height: 14px;
-    text-transform: uppercase;
     grid-row: 2
 }
 
